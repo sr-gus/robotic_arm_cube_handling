@@ -22,6 +22,14 @@ install(
 )
 
 install(
+    PROGRAMS
+    src/camera_node.py
+    src/image_processing_node.py
+    src/calibration_node.py
+    DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
     DIRECTORY launch config urdf rviz
     DESTINATION share/${PROJECT_NAME}
 )

@@ -1,0 +1,837 @@
+[0.000000] (-) TimerEvent: {}
+[0.001112] (robotic_arm_cube_handling) JobQueued: {'identifier': 'robotic_arm_cube_handling', 'dependencies': OrderedDict()}
+[0.003461] (robotic_arm_cube_handling) JobStarted: {'identifier': 'robotic_arm_cube_handling'}
+[0.067312] (robotic_arm_cube_handling) JobProgress: {'identifier': 'robotic_arm_cube_handling', 'progress': 'cmake'}
+[0.069209] (robotic_arm_cube_handling) Command: {'cmd': ['/usr/bin/cmake', '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling'], 'cwd': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'raspberrypi', 'SSH_CLIENT': '192.168.100.38 64519 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/raspberrypi', 'OLDPWD': '/home/raspberrypi/ros2_ws', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'raspberrypi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'SSH_CONNECTION': '192.168.100.38 64519 192.168.100.34 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1'}), 'shell': False}
+[0.099450] (-) TimerEvent: {}
+[0.201473] (-) TimerEvent: {}
+[0.302778] (-) TimerEvent: {}
+[0.403815] (-) TimerEvent: {}
+[0.504990] (-) TimerEvent: {}
+[0.606125] (-) TimerEvent: {}
+[0.666493] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.706371] (-) TimerEvent: {}
+[0.807540] (-) TimerEvent: {}
+[0.908620] (-) TimerEvent: {}
+[1.009811] (-) TimerEvent: {}
+[1.110989] (-) TimerEvent: {}
+[1.212249] (-) TimerEvent: {}
+[1.246026] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[1.312501] (-) TimerEvent: {}
+[1.394249] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.412810] (-) TimerEvent: {}
+[1.513916] (-) TimerEvent: {}
+[1.614966] (-) TimerEvent: {}
+[1.716127] (-) TimerEvent: {}
+[1.817360] (-) TimerEvent: {}
+[1.918405] (-) TimerEvent: {}
+[2.019487] (-) TimerEvent: {}
+[2.120652] (-) TimerEvent: {}
+[2.221869] (-) TimerEvent: {}
+[2.239332] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.320212] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.322040] (-) TimerEvent: {}
+[2.322998] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.325939] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.407120] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.422344] (-) TimerEvent: {}
+[2.523550] (-) TimerEvent: {}
+[2.624671] (-) TimerEvent: {}
+[2.725879] (-) TimerEvent: {}
+[2.827074] (-) TimerEvent: {}
+[2.928351] (-) TimerEvent: {}
+[3.029567] (-) TimerEvent: {}
+[3.130681] (-) TimerEvent: {}
+[3.231834] (-) TimerEvent: {}
+[3.332791] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.333802] (-) TimerEvent: {}
+[3.415959] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.418289] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.422092] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.434070] (-) TimerEvent: {}
+[3.455357] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.534356] (-) TimerEvent: {}
+[3.635422] (-) TimerEvent: {}
+[3.736511] (-) TimerEvent: {}
+[3.837621] (-) TimerEvent: {}
+[3.938804] (-) TimerEvent: {}
+[4.040050] (-) TimerEvent: {}
+[4.141174] (-) TimerEvent: {}
+[4.242320] (-) TimerEvent: {}
+[4.343581] (-) TimerEvent: {}
+[4.444789] (-) TimerEvent: {}
+[4.545935] (-) TimerEvent: {}
+[4.647094] (-) TimerEvent: {}
+[4.734135] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.747367] (-) TimerEvent: {}
+[4.848414] (-) TimerEvent: {}
+[4.949512] (-) TimerEvent: {}
+[5.050755] (-) TimerEvent: {}
+[5.151865] (-) TimerEvent: {}
+[5.252899] (-) TimerEvent: {}
+[5.353991] (-) TimerEvent: {}
+[5.455120] (-) TimerEvent: {}
+[5.556219] (-) TimerEvent: {}
+[5.657270] (-) TimerEvent: {}
+[5.725995] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rclpy: 7.1.2 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[5.746813] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[5.757523] (-) TimerEvent: {}
+[5.858556] (-) TimerEvent: {}
+[5.959673] (-) TimerEvent: {}
+[6.060689] (-) TimerEvent: {}
+[6.159167] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[6.160869] (-) TimerEvent: {}
+[6.261844] (-) TimerEvent: {}
+[6.302298] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[6.362111] (-) TimerEvent: {}
+[6.463266] (-) TimerEvent: {}
+[6.464836] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.563513] (-) TimerEvent: {}
+[6.644938] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.663802] (-) TimerEvent: {}
+[6.764824] (-) TimerEvent: {}
+[6.865887] (-) TimerEvent: {}
+[6.966945] (-) TimerEvent: {}
+[7.067949] (-) TimerEvent: {}
+[7.168937] (-) TimerEvent: {}
+[7.269948] (-) TimerEvent: {}
+[7.370986] (-) TimerEvent: {}
+[7.394542] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[7.471253] (-) TimerEvent: {}
+[7.572327] (-) TimerEvent: {}
+[7.673465] (-) TimerEvent: {}
+[7.774562] (-) TimerEvent: {}
+[7.875763] (-) TimerEvent: {}
+[7.970252] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[7.975977] (-) TimerEvent: {}
+[8.002297] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.076205] (-) TimerEvent: {}
+[8.177239] (-) TimerEvent: {}
+[8.278370] (-) TimerEvent: {}
+[8.379460] (-) TimerEvent: {}
+[8.480660] (-) TimerEvent: {}
+[8.581929] (-) TimerEvent: {}
+[8.683228] (-) TimerEvent: {}
+[8.748336] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[8.783495] (-) TimerEvent: {}
+[8.884578] (-) TimerEvent: {}
+[8.897207] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[8.984919] (-) TimerEvent: {}
+[9.071003] (robotic_arm_cube_handling) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.085200] (-) TimerEvent: {}
+[9.186239] (-) TimerEvent: {}
+[9.287344] (-) TimerEvent: {}
+[9.388409] (-) TimerEvent: {}
+[9.489531] (-) TimerEvent: {}
+[9.590669] (-) TimerEvent: {}
+[9.685303] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[9.690923] (-) TimerEvent: {}
+[9.791940] (-) TimerEvent: {}
+[9.836491] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[9.892228] (-) TimerEvent: {}
+[9.993390] (-) TimerEvent: {}
+[10.094493] (-) TimerEvent: {}
+[10.195567] (-) TimerEvent: {}
+[10.296762] (-) TimerEvent: {}
+[10.397911] (-) TimerEvent: {}
+[10.498876] (-) TimerEvent: {}
+[10.599919] (-) TimerEvent: {}
+[10.700916] (-) TimerEvent: {}
+[10.801916] (-) TimerEvent: {}
+[10.902945] (-) TimerEvent: {}
+[11.003904] (-) TimerEvent: {}
+[11.104965] (-) TimerEvent: {}
+[11.206024] (-) TimerEvent: {}
+[11.307077] (-) TimerEvent: {}
+[11.408137] (-) TimerEvent: {}
+[11.509149] (-) TimerEvent: {}
+[11.610271] (-) TimerEvent: {}
+[11.711420] (-) TimerEvent: {}
+[11.812522] (-) TimerEvent: {}
+[11.913605] (-) TimerEvent: {}
+[12.014889] (-) TimerEvent: {}
+[12.115943] (-) TimerEvent: {}
+[12.216908] (-) TimerEvent: {}
+[12.317970] (-) TimerEvent: {}
+[12.419042] (-) TimerEvent: {}
+[12.520102] (-) TimerEvent: {}
+[12.621204] (-) TimerEvent: {}
+[12.722369] (-) TimerEvent: {}
+[12.823533] (-) TimerEvent: {}
+[12.924683] (-) TimerEvent: {}
+[13.025834] (-) TimerEvent: {}
+[13.126908] (-) TimerEvent: {}
+[13.227941] (-) TimerEvent: {}
+[13.329040] (-) TimerEvent: {}
+[13.430129] (-) TimerEvent: {}
+[13.531281] (-) TimerEvent: {}
+[13.632407] (-) TimerEvent: {}
+[13.733649] (-) TimerEvent: {}
+[13.834910] (-) TimerEvent: {}
+[13.935992] (-) TimerEvent: {}
+[14.037189] (-) TimerEvent: {}
+[14.138230] (-) TimerEvent: {}
+[14.239436] (-) TimerEvent: {}
+[14.340492] (-) TimerEvent: {}
+[14.441475] (-) TimerEvent: {}
+[14.542546] (-) TimerEvent: {}
+[14.643683] (-) TimerEvent: {}
+[14.744868] (-) TimerEvent: {}
+[14.845877] (-) TimerEvent: {}
+[14.946883] (-) TimerEvent: {}
+[14.956549] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[15.047152] (-) TimerEvent: {}
+[15.148264] (-) TimerEvent: {}
+[15.249312] (-) TimerEvent: {}
+[15.350561] (-) TimerEvent: {}
+[15.451842] (-) TimerEvent: {}
+[15.552911] (-) TimerEvent: {}
+[15.653958] (-) TimerEvent: {}
+[15.755076] (-) TimerEvent: {}
+[15.856162] (-) TimerEvent: {}
+[15.957257] (-) TimerEvent: {}
+[16.058370] (-) TimerEvent: {}
+[16.159444] (-) TimerEvent: {}
+[16.260568] (-) TimerEvent: {}
+[16.361956] (-) TimerEvent: {}
+[16.463074] (-) TimerEvent: {}
+[16.564218] (-) TimerEvent: {}
+[16.665325] (-) TimerEvent: {}
+[16.766434] (-) TimerEvent: {}
+[16.867529] (-) TimerEvent: {}
+[16.968591] (-) TimerEvent: {}
+[17.069604] (-) TimerEvent: {}
+[17.170616] (-) TimerEvent: {}
+[17.271811] (-) TimerEvent: {}
+[17.372884] (-) TimerEvent: {}
+[17.473945] (-) TimerEvent: {}
+[17.574990] (-) TimerEvent: {}
+[17.676018] (-) TimerEvent: {}
+[17.777208] (-) TimerEvent: {}
+[17.878280] (-) TimerEvent: {}
+[17.979297] (-) TimerEvent: {}
+[18.080476] (-) TimerEvent: {}
+[18.181594] (-) TimerEvent: {}
+[18.282808] (-) TimerEvent: {}
+[18.383973] (-) TimerEvent: {}
+[18.485238] (-) TimerEvent: {}
+[18.586336] (-) TimerEvent: {}
+[18.687465] (-) TimerEvent: {}
+[18.788562] (-) TimerEvent: {}
+[18.889646] (-) TimerEvent: {}
+[18.990681] (-) TimerEvent: {}
+[19.091689] (-) TimerEvent: {}
+[19.192847] (-) TimerEvent: {}
+[19.293880] (-) TimerEvent: {}
+[19.395043] (-) TimerEvent: {}
+[19.496258] (-) TimerEvent: {}
+[19.597432] (-) TimerEvent: {}
+[19.698597] (-) TimerEvent: {}
+[19.799884] (-) TimerEvent: {}
+[19.900987] (-) TimerEvent: {}
+[20.001958] (-) TimerEvent: {}
+[20.103162] (-) TimerEvent: {}
+[20.204242] (-) TimerEvent: {}
+[20.305327] (-) TimerEvent: {}
+[20.406554] (-) TimerEvent: {}
+[20.507676] (-) TimerEvent: {}
+[20.608895] (-) TimerEvent: {}
+[20.709919] (-) TimerEvent: {}
+[20.810904] (-) TimerEvent: {}
+[20.911972] (-) TimerEvent: {}
+[21.012914] (-) TimerEvent: {}
+[21.113915] (-) TimerEvent: {}
+[21.214982] (-) TimerEvent: {}
+[21.301519] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[21.315262] (-) TimerEvent: {}
+[21.416301] (-) TimerEvent: {}
+[21.517420] (-) TimerEvent: {}
+[21.618510] (-) TimerEvent: {}
+[21.719609] (-) TimerEvent: {}
+[21.820668] (-) TimerEvent: {}
+[21.921806] (-) TimerEvent: {}
+[22.022903] (-) TimerEvent: {}
+[22.123922] (-) TimerEvent: {}
+[22.224899] (-) TimerEvent: {}
+[22.325944] (-) TimerEvent: {}
+[22.427064] (-) TimerEvent: {}
+[22.528276] (-) TimerEvent: {}
+[22.629478] (-) TimerEvent: {}
+[22.730595] (-) TimerEvent: {}
+[22.831617] (-) TimerEvent: {}
+[22.932690] (-) TimerEvent: {}
+[23.033928] (-) TimerEvent: {}
+[23.135008] (-) TimerEvent: {}
+[23.236228] (-) TimerEvent: {}
+[23.337358] (-) TimerEvent: {}
+[23.438583] (-) TimerEvent: {}
+[23.539802] (-) TimerEvent: {}
+[23.640885] (-) TimerEvent: {}
+[23.741933] (-) TimerEvent: {}
+[23.793474] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[23.821643] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[23.842191] (-) TimerEvent: {}
+[23.943254] (-) TimerEvent: {}
+[24.044311] (-) TimerEvent: {}
+[24.145351] (-) TimerEvent: {}
+[24.246442] (-) TimerEvent: {}
+[24.347548] (-) TimerEvent: {}
+[24.448967] (-) TimerEvent: {}
+[24.553898] (-) TimerEvent: {}
+[24.654963] (-) TimerEvent: {}
+[24.756067] (-) TimerEvent: {}
+[24.857169] (-) TimerEvent: {}
+[24.958258] (-) TimerEvent: {}
+[25.059437] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[25.060779] (-) TimerEvent: {}
+[25.161672] (-) TimerEvent: {}
+[25.262941] (-) TimerEvent: {}
+[25.364101] (-) TimerEvent: {}
+[25.465164] (-) TimerEvent: {}
+[25.566211] (-) TimerEvent: {}
+[25.667226] (-) TimerEvent: {}
+[25.768343] (-) TimerEvent: {}
+[25.869460] (-) TimerEvent: {}
+[25.970634] (-) TimerEvent: {}
+[26.071820] (-) TimerEvent: {}
+[26.172942] (-) TimerEvent: {}
+[26.274035] (-) TimerEvent: {}
+[26.375187] (-) TimerEvent: {}
+[26.476332] (-) TimerEvent: {}
+[26.577404] (-) TimerEvent: {}
+[26.678428] (-) TimerEvent: {}
+[26.779519] (-) TimerEvent: {}
+[26.880585] (-) TimerEvent: {}
+[26.981575] (-) TimerEvent: {}
+[27.082815] (-) TimerEvent: {}
+[27.183958] (-) TimerEvent: {}
+[27.284997] (-) TimerEvent: {}
+[27.386357] (-) TimerEvent: {}
+[27.487488] (-) TimerEvent: {}
+[27.588580] (-) TimerEvent: {}
+[27.689591] (-) TimerEvent: {}
+[27.790602] (-) TimerEvent: {}
+[27.891862] (-) TimerEvent: {}
+[27.992996] (-) TimerEvent: {}
+[28.094243] (-) TimerEvent: {}
+[28.195301] (-) TimerEvent: {}
+[28.296303] (-) TimerEvent: {}
+[28.397324] (-) TimerEvent: {}
+[28.498398] (-) TimerEvent: {}
+[28.599555] (-) TimerEvent: {}
+[28.700551] (-) TimerEvent: {}
+[28.801643] (-) TimerEvent: {}
+[28.902854] (-) TimerEvent: {}
+[29.003953] (-) TimerEvent: {}
+[29.011324] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[29.104178] (-) TimerEvent: {}
+[29.205290] (-) TimerEvent: {}
+[29.306572] (-) TimerEvent: {}
+[29.371655] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Configuring done (29.2s)\n'}
+[29.406843] (-) TimerEvent: {}
+[29.507890] (-) TimerEvent: {}
+[29.608925] (-) TimerEvent: {}
+[29.709968] (-) TimerEvent: {}
+[29.764371] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Generating done (0.3s)\n'}
+[29.797294] (robotic_arm_cube_handling) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[29.798489] (robotic_arm_cube_handling) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[29.799503] (robotic_arm_cube_handling) StderrLine: {'line': b'\n'}
+[29.800417] (robotic_arm_cube_handling) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[29.801317] (robotic_arm_cube_handling) StderrLine: {'line': b'\n'}
+[29.802554] (robotic_arm_cube_handling) StderrLine: {'line': b'\x1b[0m\n'}
+[29.803520] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Build files have been written to: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling\n'}
+[29.810247] (-) TimerEvent: {}
+[29.903191] (robotic_arm_cube_handling) CommandEnded: {'returncode': 0}
+[29.906881] (robotic_arm_cube_handling) JobProgress: {'identifier': 'robotic_arm_cube_handling', 'progress': 'build'}
+[29.916570] (robotic_arm_cube_handling) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', '--', '-j4', '-l4'], 'cwd': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'raspberrypi', 'SSH_CLIENT': '192.168.100.38 64519 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/raspberrypi', 'OLDPWD': '/home/raspberrypi/ros2_ws', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'raspberrypi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'SSH_CONNECTION': '192.168.100.38 64519 192.168.100.34 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1'}), 'shell': False}
+[29.919260] (-) TimerEvent: {}
+[30.020191] (-) TimerEvent: {}
+[30.121341] (-) TimerEvent: {}
+[30.222546] (-) TimerEvent: {}
+[30.323685] (-) TimerEvent: {}
+[30.371791] (robotic_arm_cube_handling) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[30.423954] (-) TimerEvent: {}
+[30.449159] (robotic_arm_cube_handling) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_robotic_arm_cube_handling\n'}
+[30.524227] (-) TimerEvent: {}
+[30.626045] (-) TimerEvent: {}
+[30.727281] (-) TimerEvent: {}
+[30.828462] (-) TimerEvent: {}
+[30.929609] (-) TimerEvent: {}
+[31.030865] (-) TimerEvent: {}
+[31.132067] (-) TimerEvent: {}
+[31.233135] (-) TimerEvent: {}
+[31.334213] (-) TimerEvent: {}
+[31.435450] (-) TimerEvent: {}
+[31.536655] (-) TimerEvent: {}
+[31.637844] (-) TimerEvent: {}
+[31.738859] (-) TimerEvent: {}
+[31.839864] (-) TimerEvent: {}
+[31.940884] (-) TimerEvent: {}
+[32.041956] (-) TimerEvent: {}
+[32.143152] (-) TimerEvent: {}
+[32.244297] (-) TimerEvent: {}
+[32.324746] (robotic_arm_cube_handling) StdoutLine: {'line': b'[  2%] Built target robotic_arm_cube_handling__rosidl_generator_type_description\n'}
+[32.346985] (-) TimerEvent: {}
+[32.431997] (robotic_arm_cube_handling) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[32.450145] (-) TimerEvent: {}
+[32.541290] (robotic_arm_cube_handling) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[32.551934] (-) TimerEvent: {}
+[32.654105] (-) TimerEvent: {}
+[32.663302] (robotic_arm_cube_handling) StdoutLine: {'line': b'running egg_info\n'}
+[32.671158] (robotic_arm_cube_handling) StdoutLine: {'line': b'creating robotic_arm_cube_handling.egg-info\n'}
+[32.754438] (-) TimerEvent: {}
+[32.855915] (-) TimerEvent: {}
+[32.958129] (-) TimerEvent: {}
+[32.964001] (robotic_arm_cube_handling) StdoutLine: {'line': b'writing robotic_arm_cube_handling.egg-info/PKG-INFO\n'}
+[32.966256] (robotic_arm_cube_handling) StdoutLine: {'line': b'writing dependency_links to robotic_arm_cube_handling.egg-info/dependency_links.txt\n'}
+[32.968974] (robotic_arm_cube_handling) StdoutLine: {'line': b'writing top-level names to robotic_arm_cube_handling.egg-info/top_level.txt\n'}
+[32.971282] (robotic_arm_cube_handling) StdoutLine: {'line': b"writing manifest file 'robotic_arm_cube_handling.egg-info/SOURCES.txt'\n"}
+[33.058490] (-) TimerEvent: {}
+[33.159978] (-) TimerEvent: {}
+[33.262360] (-) TimerEvent: {}
+[33.363872] (-) TimerEvent: {}
+[33.468612] (-) TimerEvent: {}
+[33.570156] (-) TimerEvent: {}
+[33.672164] (-) TimerEvent: {}
+[33.773467] (-) TimerEvent: {}
+[33.776265] (robotic_arm_cube_handling) StdoutLine: {'line': b"reading manifest file 'robotic_arm_cube_handling.egg-info/SOURCES.txt'\n"}
+[33.781789] (robotic_arm_cube_handling) StdoutLine: {'line': b"writing manifest file 'robotic_arm_cube_handling.egg-info/SOURCES.txt'\n"}
+[33.873905] (-) TimerEvent: {}
+[33.975504] (-) TimerEvent: {}
+[34.078999] (-) TimerEvent: {}
+[34.149261] (robotic_arm_cube_handling) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_robotic_arm_cube_handling_egg\n'}
+[34.179247] (-) TimerEvent: {}
+[34.280894] (-) TimerEvent: {}
+[34.382475] (-) TimerEvent: {}
+[34.484272] (-) TimerEvent: {}
+[34.608675] (-) TimerEvent: {}
+[34.709884] (-) TimerEvent: {}
+[34.810943] (-) TimerEvent: {}
+[34.912147] (-) TimerEvent: {}
+[35.014624] (-) TimerEvent: {}
+[35.120043] (-) TimerEvent: {}
+[35.224347] (-) TimerEvent: {}
+[35.267012] (robotic_arm_cube_handling) StdoutLine: {'line': b'[  8%] Built target robotic_arm_cube_handling__cpp\n'}
+[35.324793] (-) TimerEvent: {}
+[35.426011] (-) TimerEvent: {}
+[35.526450] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/robotic_arm_cube_handling__rosidl_generator_c.dir/rosidl_generator_c/robotic_arm_cube_handling/msg/detail/calibration_params__description.c.o\x1b[0m\n'}
+[35.528039] (-) TimerEvent: {}
+[35.530319] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/robotic_arm_cube_handling__rosidl_generator_c.dir/rosidl_generator_c/robotic_arm_cube_handling/msg/detail/calibration_params__functions.c.o\x1b[0m\n'}
+[35.533077] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/robotic_arm_cube_handling__rosidl_generator_c.dir/rosidl_generator_c/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.c.o\x1b[0m\n'}
+[35.628423] (-) TimerEvent: {}
+[35.730756] (-) TimerEvent: {}
+[35.832002] (-) TimerEvent: {}
+[35.933252] (-) TimerEvent: {}
+[36.034585] (-) TimerEvent: {}
+[36.076897] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library librobotic_arm_cube_handling__rosidl_generator_c.so\x1b[0m\n'}
+[36.134918] (-) TimerEvent: {}
+[36.236033] (-) TimerEvent: {}
+[36.337346] (-) TimerEvent: {}
+[36.438564] (-) TimerEvent: {}
+[36.458579] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 20%] Built target robotic_arm_cube_handling__rosidl_generator_c\n'}
+[36.540125] (-) TimerEvent: {}
+[36.562315] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[36.563980] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[36.568973] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[36.577028] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[36.640424] (-) TimerEvent: {}
+[36.744587] (-) TimerEvent: {}
+[36.848907] (-) TimerEvent: {}
+[36.953993] (-) TimerEvent: {}
+[37.059653] (-) TimerEvent: {}
+[37.163585] (-) TimerEvent: {}
+[37.268973] (-) TimerEvent: {}
+[37.370357] (-) TimerEvent: {}
+[37.473099] (-) TimerEvent: {}
+[37.576990] (-) TimerEvent: {}
+[37.678484] (-) TimerEvent: {}
+[37.781527] (-) TimerEvent: {}
+[37.884447] (-) TimerEvent: {}
+[37.988485] (-) TimerEvent: {}
+[38.089980] (-) TimerEvent: {}
+[38.194638] (-) TimerEvent: {}
+[38.296091] (-) TimerEvent: {}
+[38.400479] (-) TimerEvent: {}
+[38.501860] (-) TimerEvent: {}
+[38.606570] (-) TimerEvent: {}
+[38.707989] (-) TimerEvent: {}
+[38.809383] (-) TimerEvent: {}
+[38.912900] (-) TimerEvent: {}
+[39.018889] (-) TimerEvent: {}
+[39.120783] (-) TimerEvent: {}
+[39.225790] (-) TimerEvent: {}
+[39.330947] (-) TimerEvent: {}
+[39.373182] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/robotic_arm_cube_handling__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotic_arm_cube_handling/msg/calibration_params__type_support.cpp.o\x1b[0m\n'}
+[39.431341] (-) TimerEvent: {}
+[39.534562] (-) TimerEvent: {}
+[39.598410] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/robotic_arm_cube_handling__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.c.o\x1b[0m\n'}
+[39.637017] (-) TimerEvent: {}
+[39.741249] (-) TimerEvent: {}
+[39.826165] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/robotic_arm_cube_handling__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotic_arm_cube_handling/msg/detail/dds_fastrtps/calibration_params__type_support.cpp.o\x1b[0m\n'}
+[39.843100] (-) TimerEvent: {}
+[39.909864] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/robotic_arm_cube_handling__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotic_arm_cube_handling/msg/detail/calibration_params__type_support_c.cpp.o\x1b[0m\n'}
+[39.946053] (-) TimerEvent: {}
+[40.047559] (-) TimerEvent: {}
+[40.120644] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking C shared library librobotic_arm_cube_handling__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[40.151031] (-) TimerEvent: {}
+[40.252535] (-) TimerEvent: {}
+[40.357133] (-) TimerEvent: {}
+[40.464059] (-) TimerEvent: {}
+[40.484430] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 47%] Built target robotic_arm_cube_handling__rosidl_typesupport_introspection_c\n'}
+[40.564381] (-) TimerEvent: {}
+[40.619057] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[40.667043] (-) TimerEvent: {}
+[40.768575] (-) TimerEvent: {}
+[40.877049] (-) TimerEvent: {}
+[40.982135] (-) TimerEvent: {}
+[41.084274] (-) TimerEvent: {}
+[41.191088] (-) TimerEvent: {}
+[41.295594] (-) TimerEvent: {}
+[41.400938] (-) TimerEvent: {}
+[41.505907] (-) TimerEvent: {}
+[41.611813] (-) TimerEvent: {}
+[41.716551] (-) TimerEvent: {}
+[41.820914] (-) TimerEvent: {}
+[41.925353] (-) TimerEvent: {}
+[42.031053] (-) TimerEvent: {}
+[42.135688] (-) TimerEvent: {}
+[42.240815] (-) TimerEvent: {}
+[42.345850] (-) TimerEvent: {}
+[42.450484] (-) TimerEvent: {}
+[42.557031] (-) TimerEvent: {}
+[42.659617] (-) TimerEvent: {}
+[42.764044] (-) TimerEvent: {}
+[42.868033] (-) TimerEvent: {}
+[42.969852] (-) TimerEvent: {}
+[43.073814] (-) TimerEvent: {}
+[43.178497] (-) TimerEvent: {}
+[43.284568] (-) TimerEvent: {}
+[43.390083] (-) TimerEvent: {}
+[43.494151] (-) TimerEvent: {}
+[43.601254] (-) TimerEvent: {}
+[43.707309] (-) TimerEvent: {}
+[43.814091] (-) TimerEvent: {}
+[43.920083] (-) TimerEvent: {}
+[44.022088] (-) TimerEvent: {}
+[44.070500] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/robotic_arm_cube_handling__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotic_arm_cube_handling/msg/calibration_params__type_support.cpp.o\x1b[0m\n'}
+[44.122534] (-) TimerEvent: {}
+[44.227367] (-) TimerEvent: {}
+[44.332443] (-) TimerEvent: {}
+[44.437918] (-) TimerEvent: {}
+[44.544101] (-) TimerEvent: {}
+[44.649078] (-) TimerEvent: {}
+[44.685376] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library librobotic_arm_cube_handling__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[44.746286] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library librobotic_arm_cube_handling__rosidl_typesupport_c.so\x1b[0m\n'}
+[44.749429] (-) TimerEvent: {}
+[44.855300] (-) TimerEvent: {}
+[44.960313] (-) TimerEvent: {}
+[45.062400] (-) TimerEvent: {}
+[45.169978] (-) TimerEvent: {}
+[45.242492] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 58%] Built target robotic_arm_cube_handling__rosidl_typesupport_cpp\n'}
+[45.270354] (-) TimerEvent: {}
+[45.322234] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 58%] Built target robotic_arm_cube_handling__rosidl_typesupport_c\n'}
+[45.373045] (-) TimerEvent: {}
+[45.390408] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 61%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[45.473425] (-) TimerEvent: {}
+[45.576433] (-) TimerEvent: {}
+[45.679040] (-) TimerEvent: {}
+[45.781785] (-) TimerEvent: {}
+[45.883448] (-) TimerEvent: {}
+[45.986077] (-) TimerEvent: {}
+[46.088870] (-) TimerEvent: {}
+[46.190683] (-) TimerEvent: {}
+[46.292470] (-) TimerEvent: {}
+[46.395277] (-) TimerEvent: {}
+[46.496990] (-) TimerEvent: {}
+[46.599459] (-) TimerEvent: {}
+[46.701345] (-) TimerEvent: {}
+[46.804028] (-) TimerEvent: {}
+[46.905541] (-) TimerEvent: {}
+[47.008295] (-) TimerEvent: {}
+[47.109947] (-) TimerEvent: {}
+[47.212168] (-) TimerEvent: {}
+[47.313568] (-) TimerEvent: {}
+[47.384878] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library librobotic_arm_cube_handling__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[47.413959] (-) TimerEvent: {}
+[47.515288] (-) TimerEvent: {}
+[47.534508] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library librobotic_arm_cube_handling__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[47.615590] (-) TimerEvent: {}
+[47.717027] (-) TimerEvent: {}
+[47.818534] (-) TimerEvent: {}
+[47.920128] (-) TimerEvent: {}
+[47.980514] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 67%] Built target robotic_arm_cube_handling__rosidl_typesupport_fastrtps_c\n'}
+[48.020551] (-) TimerEvent: {}
+[48.121966] (-) TimerEvent: {}
+[48.125866] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 67%] Built target robotic_arm_cube_handling__rosidl_typesupport_fastrtps_cpp\n'}
+[48.222253] (-) TimerEvent: {}
+[48.323525] (-) TimerEvent: {}
+[48.381003] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/robotic_arm_cube_handling__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.cpp.o\x1b[0m\n'}
+[48.423869] (-) TimerEvent: {}
+[48.524937] (-) TimerEvent: {}
+[48.625969] (-) TimerEvent: {}
+[48.727107] (-) TimerEvent: {}
+[48.828294] (-) TimerEvent: {}
+[48.929468] (-) TimerEvent: {}
+[49.030633] (-) TimerEvent: {}
+[49.131804] (-) TimerEvent: {}
+[49.232983] (-) TimerEvent: {}
+[49.334194] (-) TimerEvent: {}
+[49.435456] (-) TimerEvent: {}
+[49.536815] (-) TimerEvent: {}
+[49.637985] (-) TimerEvent: {}
+[49.739445] (-) TimerEvent: {}
+[49.840809] (-) TimerEvent: {}
+[49.941957] (-) TimerEvent: {}
+[50.043171] (-) TimerEvent: {}
+[50.144449] (-) TimerEvent: {}
+[50.245634] (-) TimerEvent: {}
+[50.346950] (-) TimerEvent: {}
+[50.448133] (-) TimerEvent: {}
+[50.549401] (-) TimerEvent: {}
+[50.650661] (-) TimerEvent: {}
+[50.751943] (-) TimerEvent: {}
+[50.853198] (-) TimerEvent: {}
+[50.954493] (-) TimerEvent: {}
+[51.055822] (-) TimerEvent: {}
+[51.156977] (-) TimerEvent: {}
+[51.258226] (-) TimerEvent: {}
+[51.359496] (-) TimerEvent: {}
+[51.460838] (-) TimerEvent: {}
+[51.561991] (-) TimerEvent: {}
+[51.663254] (-) TimerEvent: {}
+[51.764387] (-) TimerEvent: {}
+[51.833435] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library librobotic_arm_cube_handling__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[51.864661] (-) TimerEvent: {}
+[51.965916] (-) TimerEvent: {}
+[52.067129] (-) TimerEvent: {}
+[52.168601] (-) TimerEvent: {}
+[52.194167] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 73%] Built target robotic_arm_cube_handling__rosidl_typesupport_introspection_cpp\n'}
+[52.269046] (-) TimerEvent: {}
+[52.370195] (-) TimerEvent: {}
+[52.377078] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 73%] Built target robotic_arm_cube_handling\n'}
+[52.470473] (-) TimerEvent: {}
+[52.569240] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[52.570478] (-) TimerEvent: {}
+[52.671449] (-) TimerEvent: {}
+[52.772513] (-) TimerEvent: {}
+[52.873598] (-) TimerEvent: {}
+[52.974858] (-) TimerEvent: {}
+[53.076017] (-) TimerEvent: {}
+[53.177201] (-) TimerEvent: {}
+[53.278304] (-) TimerEvent: {}
+[53.379560] (-) TimerEvent: {}
+[53.480666] (-) TimerEvent: {}
+[53.581775] (-) TimerEvent: {}
+[53.682827] (-) TimerEvent: {}
+[53.783808] (-) TimerEvent: {}
+[53.884819] (-) TimerEvent: {}
+[53.985850] (-) TimerEvent: {}
+[54.086861] (-) TimerEvent: {}
+[54.187931] (-) TimerEvent: {}
+[54.288945] (-) TimerEvent: {}
+[54.390071] (-) TimerEvent: {}
+[54.491172] (-) TimerEvent: {}
+[54.592287] (-) TimerEvent: {}
+[54.693398] (-) TimerEvent: {}
+[54.794405] (-) TimerEvent: {}
+[54.895601] (-) TimerEvent: {}
+[54.996675] (-) TimerEvent: {}
+[55.097967] (-) TimerEvent: {}
+[55.202094] (-) TimerEvent: {}
+[55.303985] (-) TimerEvent: {}
+[55.375383] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 76%] Built target robotic_arm_cube_handling__py\n'}
+[55.404244] (-) TimerEvent: {}
+[55.505477] (-) TimerEvent: {}
+[55.558624] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/robotic_arm_cube_handling__rosidl_generator_py.dir/rosidl_generator_py/robotic_arm_cube_handling/msg/_calibration_params_s.c.o\x1b[0m\n'}
+[55.605794] (-) TimerEvent: {}
+[55.706968] (-) TimerEvent: {}
+[55.808125] (-) TimerEvent: {}
+[55.909298] (-) TimerEvent: {}
+[56.010467] (-) TimerEvent: {}
+[56.111652] (-) TimerEvent: {}
+[56.212665] (-) TimerEvent: {}
+[56.313851] (-) TimerEvent: {}
+[56.414916] (-) TimerEvent: {}
+[56.515949] (-) TimerEvent: {}
+[56.617024] (-) TimerEvent: {}
+[56.718141] (-) TimerEvent: {}
+[56.819311] (-) TimerEvent: {}
+[56.829634] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library librobotic_arm_cube_handling__rosidl_generator_py.so\x1b[0m\n'}
+[56.919558] (-) TimerEvent: {}
+[57.020831] (-) TimerEvent: {}
+[57.121944] (-) TimerEvent: {}
+[57.222984] (-) TimerEvent: {}
+[57.242122] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 82%] Built target robotic_arm_cube_handling__rosidl_generator_py\n'}
+[57.323334] (-) TimerEvent: {}
+[57.427359] (-) TimerEvent: {}
+[57.444950] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/robotic_arm_cube_handling_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/robotic_arm_cube_handling/_robotic_arm_cube_handling_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[57.446952] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/robotic_arm_cube_handling_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/robotic_arm_cube_handling/_robotic_arm_cube_handling_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[57.454035] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/robotic_arm_cube_handling_s__rosidl_typesupport_c.dir/rosidl_generator_py/robotic_arm_cube_handling/_robotic_arm_cube_handling_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[57.529023] (-) TimerEvent: {}
+[57.630299] (-) TimerEvent: {}
+[57.731466] (-) TimerEvent: {}
+[57.833619] (-) TimerEvent: {}
+[57.935038] (-) TimerEvent: {}
+[58.037343] (-) TimerEvent: {}
+[58.138912] (-) TimerEvent: {}
+[58.241563] (-) TimerEvent: {}
+[58.343361] (-) TimerEvent: {}
+[58.446217] (-) TimerEvent: {}
+[58.548580] (-) TimerEvent: {}
+[58.650363] (-) TimerEvent: {}
+[58.723682] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[58.750195] (robotic_arm_cube_handling) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[58.751966] (-) TimerEvent: {}
+[58.838025] (robotic_arm_cube_handling) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[58.852296] (-) TimerEvent: {}
+[58.953626] (-) TimerEvent: {}
+[59.056298] (-) TimerEvent: {}
+[59.072349] (robotic_arm_cube_handling) StdoutLine: {'line': b'[100%] Built target robotic_arm_cube_handling_s__rosidl_typesupport_c\n'}
+[59.102136] (robotic_arm_cube_handling) StdoutLine: {'line': b'[100%] Built target robotic_arm_cube_handling_s__rosidl_typesupport_introspection_c\n'}
+[59.156651] (-) TimerEvent: {}
+[59.183346] (robotic_arm_cube_handling) StdoutLine: {'line': b'[100%] Built target robotic_arm_cube_handling_s__rosidl_typesupport_fastrtps_c\n'}
+[59.257029] (-) TimerEvent: {}
+[59.293885] (robotic_arm_cube_handling) CommandEnded: {'returncode': 0}
+[59.357318] (-) TimerEvent: {}
+[59.458567] (-) TimerEvent: {}
+[59.560376] (-) TimerEvent: {}
+[59.661616] (-) TimerEvent: {}
+[59.762866] (-) TimerEvent: {}
+[59.863991] (-) TimerEvent: {}
+[59.965261] (-) TimerEvent: {}
+[60.066445] (-) TimerEvent: {}
+[60.167476] (-) TimerEvent: {}
+[60.268673] (-) TimerEvent: {}
+[60.369818] (-) TimerEvent: {}
+[60.471199] (-) TimerEvent: {}
+[60.572436] (-) TimerEvent: {}
+[60.623510] (robotic_arm_cube_handling) JobProgress: {'identifier': 'robotic_arm_cube_handling', 'progress': 'install'}
+[60.672851] (-) TimerEvent: {}
+[60.703809] (robotic_arm_cube_handling) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling'], 'cwd': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'raspberrypi', 'SSH_CLIENT': '192.168.100.38 64519 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/raspberrypi', 'OLDPWD': '/home/raspberrypi/ros2_ws', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'raspberrypi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'SSH_CONNECTION': '192.168.100.38 64519 192.168.100.34 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1'}), 'shell': False}
+[60.773135] (-) TimerEvent: {}
+[60.783215] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[60.785951] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/ament_index/resource_index/rosidl_interfaces/robotic_arm_cube_handling\n'}
+[60.790244] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/msg/CalibrationParams.json\n'}
+[60.793038] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling\n'}
+[60.795043] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg\n'}
+[60.796929] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_generator_c__visibility_control.h\n'}
+[60.800044] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/calibration_params.h\n'}
+[60.802778] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail\n'}
+[60.804753] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.c\n'}
+[60.807765] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.h\n'}
+[60.810811] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__functions.h\n'}
+[60.814076] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__struct.h\n'}
+[60.817021] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__functions.c\n'}
+[60.820116] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__description.c\n'}
+[60.824106] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/library_path.sh\n'}
+[60.827080] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/library_path.dsv\n'}
+[60.831030] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_generator_c.so\n'}
+[60.837809] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_generator_c.so" to ""\n'}
+[60.839188] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling\n'}
+[60.840419] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg\n'}
+[60.841631] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[60.843921] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail\n'}
+[60.845233] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__rosidl_typesupport_fastrtps_c.h\n'}
+[60.848917] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_fastrtps_c.so\n'}
+[60.855361] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[60.856847] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling\n'}
+[60.858088] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg\n'}
+[60.859297] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/calibration_params.hpp\n'}
+[60.861159] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail\n'}
+[60.862488] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__struct.hpp\n'}
+[60.865571] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.hpp\n'}
+[60.868483] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__builder.hpp\n'}
+[60.871479] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__traits.hpp\n'}
+[60.873303] (-) TimerEvent: {}
+[60.874525] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[60.877792] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling\n'}
+[60.879110] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg\n'}
+[60.880312] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[60.883010] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail\n'}
+[60.884320] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[60.887249] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/dds_fastrtps\n'}
+[60.889861] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_fastrtps_cpp.so\n'}
+[60.896484] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[60.897892] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling\n'}
+[60.899164] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg\n'}
+[60.900378] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[60.902670] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail\n'}
+[60.904054] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.c\n'}
+[60.907514] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__rosidl_typesupport_introspection_c.h\n'}
+[60.911117] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_introspection_c.so\n'}
+[60.917364] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_introspection_c.so" to ""\n'}
+[60.918687] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_c.so\n'}
+[60.924841] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_c.so" to ""\n'}
+[60.926229] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling\n'}
+[60.927596] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg\n'}
+[60.928884] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail\n'}
+[60.930079] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.cpp\n'}
+[60.932358] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__rosidl_typesupport_introspection_cpp.hpp\n'}
+[60.936264] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_introspection_cpp.so\n'}
+[60.942520] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[60.943930] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_cpp.so\n'}
+[60.950006] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_cpp.so" to ""\n'}
+[60.951290] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/pythonpath.sh\n'}
+[60.954134] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/pythonpath.dsv\n'}
+[60.956959] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info\n'}
+[60.959320] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[60.962279] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[60.965114] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[60.967957] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[60.971039] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling\n'}
+[60.973014] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_introspection_c.so\n'}
+[60.974168] (-) TimerEvent: {}
+[60.977560] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_fastrtps_c.so\n'}
+[60.981759] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_c.so\n'}
+[60.985634] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg\n'}
+[60.987493] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg/_calibration_params.py\n'}
+[60.990448] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg/_calibration_params_s.c\n'}
+[60.993260] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg/__init__.py\n'}
+[60.996094] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/_robotic_arm_cube_handling_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[60.999132] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/__init__.py\n'}
+[61.001777] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/_robotic_arm_cube_handling_s.ep.rosidl_typesupport_c.c\n'}
+[61.004928] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/_robotic_arm_cube_handling_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[61.074434] (-) TimerEvent: {}
+[61.175500] (-) TimerEvent: {}
+[61.276620] (-) TimerEvent: {}
+[61.370848] (robotic_arm_cube_handling) StdoutLine: {'line': b"Listing '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling'...\n"}
+[61.372298] (robotic_arm_cube_handling) StdoutLine: {'line': b"Compiling '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/__init__.py'...\n"}
+[61.373367] (robotic_arm_cube_handling) StdoutLine: {'line': b"Listing '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg'...\n"}
+[61.374606] (robotic_arm_cube_handling) StdoutLine: {'line': b"Compiling '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg/__init__.py'...\n"}
+[61.375651] (robotic_arm_cube_handling) StdoutLine: {'line': b"Compiling '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg/_calibration_params.py'...\n"}
+[61.376693] (-) TimerEvent: {}
+[61.446932] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_fastrtps_c.so\n'}
+[61.453392] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[61.457275] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_introspection_c.so\n'}
+[61.463958] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[61.467611] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_c.so\n'}
+[61.474126] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_c.so" to ""\n'}
+[61.475647] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_generator_py.so\n'}
+[61.476797] (-) TimerEvent: {}
+[61.482199] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_generator_py.so" to ""\n'}
+[61.483832] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/msg/CalibrationParams.idl\n'}
+[61.486222] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/msg/CalibrationParams.msg\n'}
+[61.488790] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling\n'}
+[61.490225] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling/publish_calibration_params.py\n'}
+[61.492635] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling/image_processing_node.py\n'}
+[61.494959] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling/calibration_node.py\n'}
+[61.497255] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling/camera_node.py\n'}
+[61.499795] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/launch\n'}
+[61.501493] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/launch/camera_processing_launch.py\n'}
+[61.504277] (robotic_arm_cube_handling) StderrLine: {'line': b'\x1b[31mCMake Error at cmake_install.cmake:378 (file):\n'}
+[61.505529] (robotic_arm_cube_handling) StderrLine: {'line': b'  file INSTALL cannot find\n'}
+[61.506589] (robotic_arm_cube_handling) StderrLine: {'line': b'  "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/config": No such\n'}
+[61.507497] (robotic_arm_cube_handling) StderrLine: {'line': b'  file or directory.\n'}
+[61.508400] (robotic_arm_cube_handling) StderrLine: {'line': b'\n'}
+[61.509275] (robotic_arm_cube_handling) StderrLine: {'line': b'\x1b[0m\n'}
+[61.518661] (robotic_arm_cube_handling) CommandEnded: {'returncode': 1}
+[61.577054] (-) TimerEvent: {}
+[61.678385] (-) TimerEvent: {}
+[61.779613] (-) TimerEvent: {}
+[61.880804] (-) TimerEvent: {}
+[61.981997] (-) TimerEvent: {}
+[62.083361] (-) TimerEvent: {}
+[62.185143] (-) TimerEvent: {}
+[62.286573] (-) TimerEvent: {}
+[62.343266] (robotic_arm_cube_handling) JobEnded: {'identifier': 'robotic_arm_cube_handling', 'rc': 1}
+[62.356493] (-) EventReactorShutdown: {}
