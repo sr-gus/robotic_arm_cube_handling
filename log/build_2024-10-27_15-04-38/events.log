@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.001079] (robotic_arm_cube_handling) JobQueued: {'identifier': 'robotic_arm_cube_handling', 'dependencies': OrderedDict()}
+[0.003570] (robotic_arm_cube_handling) JobStarted: {'identifier': 'robotic_arm_cube_handling'}
+[0.066685] (robotic_arm_cube_handling) JobProgress: {'identifier': 'robotic_arm_cube_handling', 'progress': 'cmake'}
+[0.072487] (robotic_arm_cube_handling) Command: {'cmd': ['/usr/bin/cmake', '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling'], 'cwd': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'raspberrypi', 'SSH_CLIENT': '192.168.100.38 64519 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/lib/aarch64-linux-gnu:/opt/ros/rolling/lib', 'HOME': '/home/raspberrypi', 'OLDPWD': '/home/raspberrypi/ros2_ws/src', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'raspberrypi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'PATH': '/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'SSH_CONNECTION': '192.168.100.38 64519 192.168.100.34 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1'}), 'shell': False}
+[0.098685] (-) TimerEvent: {}
+[0.200514] (-) TimerEvent: {}
+[0.201604] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.0 (/opt/ros/rolling/share/ament_cmake/cmake)\n'}
+[0.300753] (-) TimerEvent: {}
+[0.401840] (-) TimerEvent: {}
+[0.503183] (-) TimerEvent: {}
+[0.604323] (-) TimerEvent: {}
+[0.705360] (-) TimerEvent: {}
+[0.806400] (-) TimerEvent: {}
+[0.907534] (-) TimerEvent: {}
+[1.008590] (-) TimerEvent: {}
+[1.109678] (-) TimerEvent: {}
+[1.210787] (-) TimerEvent: {}
+[1.311905] (-) TimerEvent: {}
+[1.412965] (-) TimerEvent: {}
+[1.514061] (-) TimerEvent: {}
+[1.615095] (-) TimerEvent: {}
+[1.716145] (-) TimerEvent: {}
+[1.817235] (-) TimerEvent: {}
+[1.918206] (-) TimerEvent: {}
+[2.019311] (-) TimerEvent: {}
+[2.118871] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rclpy: 7.5.0 (/opt/ros/rolling/share/rclpy/cmake)\n'}
+[2.120103] (-) TimerEvent: {}
+[2.120920] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found sensor_msgs: 5.4.1 (/opt/ros/rolling/share/sensor_msgs/cmake)\n'}
+[2.220294] (-) TimerEvent: {}
+[2.321240] (-) TimerEvent: {}
+[2.422242] (-) TimerEvent: {}
+[2.504361] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_c/cmake)\n'}
+[2.522479] (-) TimerEvent: {}
+[2.623508] (-) TimerEvent: {}
+[2.670540] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)\n'}
+[2.723759] (-) TimerEvent: {}
+[2.824841] (-) TimerEvent: {}
+[2.877737] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.925141] (-) TimerEvent: {}
+[3.026191] (-) TimerEvent: {}
+[3.094297] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.126477] (-) TimerEvent: {}
+[3.227587] (-) TimerEvent: {}
+[3.328727] (-) TimerEvent: {}
+[3.429829] (-) TimerEvent: {}
+[3.530995] (-) TimerEvent: {}
+[3.632238] (-) TimerEvent: {}
+[3.733277] (-) TimerEvent: {}
+[3.834277] (-) TimerEvent: {}
+[3.935502] (-) TimerEvent: {}
+[4.036579] (-) TimerEvent: {}
+[4.137691] (robotic_arm_cube_handling) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[4.139416] (-) TimerEvent: {}
+[4.139987] (robotic_arm_cube_handling) StderrLine: {'line': b'  By not providing "Findcv_bridge.cmake" in CMAKE_MODULE_PATH this project\n'}
+[4.141134] (robotic_arm_cube_handling) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[4.141978] (robotic_arm_cube_handling) StderrLine: {'line': b'  "cv_bridge", but CMake did not find one.\n'}
+[4.142921] (robotic_arm_cube_handling) StderrLine: {'line': b'\n'}
+[4.143820] (robotic_arm_cube_handling) StderrLine: {'line': b'  Could not find a package configuration file provided by "cv_bridge" with\n'}
+[4.144720] (robotic_arm_cube_handling) StderrLine: {'line': b'  any of the following names:\n'}
+[4.145613] (robotic_arm_cube_handling) StderrLine: {'line': b'\n'}
+[4.146490] (robotic_arm_cube_handling) StderrLine: {'line': b'    cv_bridgeConfig.cmake\n'}
+[4.147466] (robotic_arm_cube_handling) StderrLine: {'line': b'    cv_bridge-config.cmake\n'}
+[4.148721] (robotic_arm_cube_handling) StderrLine: {'line': b'\n'}
+[4.149642] (robotic_arm_cube_handling) StderrLine: {'line': b'  Add the installation prefix of "cv_bridge" to CMAKE_PREFIX_PATH or set\n'}
+[4.150467] (robotic_arm_cube_handling) StderrLine: {'line': b'  "cv_bridge_DIR" to a directory containing one of the above files.  If\n'}
+[4.151262] (robotic_arm_cube_handling) StderrLine: {'line': b'  "cv_bridge" provides a separate development package or SDK, be sure it has\n'}
+[4.151978] (robotic_arm_cube_handling) StderrLine: {'line': b'  been installed.\n'}
+[4.152762] (robotic_arm_cube_handling) StderrLine: {'line': b'\n'}
+[4.153504] (robotic_arm_cube_handling) StderrLine: {'line': b'\x1b[0m\n'}
+[4.154292] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.178600] (robotic_arm_cube_handling) CommandEnded: {'returncode': 1}
+[4.239729] (-) TimerEvent: {}
+[4.340903] (-) TimerEvent: {}
+[4.346093] (robotic_arm_cube_handling) JobEnded: {'identifier': 'robotic_arm_cube_handling', 'rc': 1}
+[4.359654] (-) EventReactorShutdown: {}

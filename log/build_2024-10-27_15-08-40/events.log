@@ -1,0 +1,128 @@
+[0.000000] (-) TimerEvent: {}
+[0.002976] (robotic_arm_cube_handling) JobQueued: {'identifier': 'robotic_arm_cube_handling', 'dependencies': OrderedDict()}
+[0.004056] (robotic_arm_cube_handling) JobStarted: {'identifier': 'robotic_arm_cube_handling'}
+[0.089583] (robotic_arm_cube_handling) JobProgress: {'identifier': 'robotic_arm_cube_handling', 'progress': 'cmake'}
+[0.097437] (robotic_arm_cube_handling) Command: {'cmd': ['/usr/bin/cmake', '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling'], 'cwd': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'raspberrypi', 'SSH_CLIENT': '192.168.100.38 64519 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/lib/aarch64-linux-gnu:/opt/ros/rolling/lib', 'HOME': '/home/raspberrypi', 'OLDPWD': '/home/raspberrypi/ros2_ws/src', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'raspberrypi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'PATH': '/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling', 'SSH_CONNECTION': '192.168.100.38 64519 192.168.100.34 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1'}), 'shell': False}
+[0.114866] (-) TimerEvent: {}
+[0.216205] (-) TimerEvent: {}
+[0.317305] (-) TimerEvent: {}
+[0.325894] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.0 (/opt/ros/rolling/share/ament_cmake/cmake)\n'}
+[0.417619] (-) TimerEvent: {}
+[0.518960] (-) TimerEvent: {}
+[0.620084] (-) TimerEvent: {}
+[0.721211] (-) TimerEvent: {}
+[0.822354] (-) TimerEvent: {}
+[0.923519] (-) TimerEvent: {}
+[1.024682] (-) TimerEvent: {}
+[1.125929] (-) TimerEvent: {}
+[1.226995] (-) TimerEvent: {}
+[1.328107] (-) TimerEvent: {}
+[1.429301] (-) TimerEvent: {}
+[1.530358] (-) TimerEvent: {}
+[1.631566] (-) TimerEvent: {}
+[1.732712] (-) TimerEvent: {}
+[1.833879] (-) TimerEvent: {}
+[1.934961] (-) TimerEvent: {}
+[2.036002] (-) TimerEvent: {}
+[2.137225] (-) TimerEvent: {}
+[2.238549] (-) TimerEvent: {}
+[2.339721] (-) TimerEvent: {}
+[2.401747] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rclpy: 7.5.0 (/opt/ros/rolling/share/rclpy/cmake)\n'}
+[2.407040] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found sensor_msgs: 5.4.1 (/opt/ros/rolling/share/sensor_msgs/cmake)\n'}
+[2.439993] (-) TimerEvent: {}
+[2.541034] (-) TimerEvent: {}
+[2.642002] (-) TimerEvent: {}
+[2.743157] (-) TimerEvent: {}
+[2.749988] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_c/cmake)\n'}
+[2.843422] (-) TimerEvent: {}
+[2.861900] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)\n'}
+[2.943729] (-) TimerEvent: {}
+[3.005361] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.044041] (-) TimerEvent: {}
+[3.145171] (-) TimerEvent: {}
+[3.167917] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.245429] (-) TimerEvent: {}
+[3.346465] (-) TimerEvent: {}
+[3.447878] (-) TimerEvent: {}
+[3.548997] (-) TimerEvent: {}
+[3.649999] (-) TimerEvent: {}
+[3.751173] (-) TimerEvent: {}
+[3.852336] (-) TimerEvent: {}
+[3.953446] (-) TimerEvent: {}
+[3.967142] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/rolling/share/cv_bridge/cmake)\n'}
+[4.053703] (-) TimerEvent: {}
+[4.154858] (-) TimerEvent: {}
+[4.255990] (-) TimerEvent: {}
+[4.357051] (-) TimerEvent: {}
+[4.458181] (-) TimerEvent: {}
+[4.559284] (-) TimerEvent: {}
+[4.648551] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.4.3 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)\n'}
+[4.659552] (-) TimerEvent: {}
+[4.692312] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.0.1 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.759883] (-) TimerEvent: {}
+[4.860968] (-) TimerEvent: {}
+[4.962018] (-) TimerEvent: {}
+[5.063078] (-) TimerEvent: {}
+[5.164248] (-) TimerEvent: {}
+[5.265424] (-) TimerEvent: {}
+[5.366591] (-) TimerEvent: {}
+[5.467973] (-) TimerEvent: {}
+[5.569120] (-) TimerEvent: {}
+[5.572153] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[5.669366] (-) TimerEvent: {}
+[5.727284] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/rolling/include (Required is at least version "2.13") \n'}
+[5.769668] (-) TimerEvent: {}
+[5.870874] (-) TimerEvent: {}
+[5.904806] (robotic_arm_cube_handling) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.971050] (-) TimerEvent: {}
+[6.072037] (-) TimerEvent: {}
+[6.173143] (-) TimerEvent: {}
+[6.274199] (-) TimerEvent: {}
+[6.375264] (-) TimerEvent: {}
+[6.476248] (-) TimerEvent: {}
+[6.577411] (-) TimerEvent: {}
+[6.648745] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.7.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)\n'}
+[6.677662] (-) TimerEvent: {}
+[6.778735] (-) TimerEvent: {}
+[6.838658] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.8.1 (/opt/ros/rolling/share/rosidl_adapter/cmake)\n'}
+[6.878997] (-) TimerEvent: {}
+[6.979987] (-) TimerEvent: {}
+[7.081010] (-) TimerEvent: {}
+[7.182120] (-) TimerEvent: {}
+[7.283238] (-) TimerEvent: {}
+[7.384432] (-) TimerEvent: {}
+[7.485507] (-) TimerEvent: {}
+[7.586675] (-) TimerEvent: {}
+[7.687814] (-) TimerEvent: {}
+[7.788916] (-) TimerEvent: {}
+[7.890011] (-) TimerEvent: {}
+[7.991139] (-) TimerEvent: {}
+[8.092333] (-) TimerEvent: {}
+[8.193506] (-) TimerEvent: {}
+[8.294585] (-) TimerEvent: {}
+[8.395565] (-) TimerEvent: {}
+[8.496553] (-) TimerEvent: {}
+[8.597663] (-) TimerEvent: {}
+[8.698917] (-) TimerEvent: {}
+[8.799966] (-) TimerEvent: {}
+[8.900968] (-) TimerEvent: {}
+[9.001957] (-) TimerEvent: {}
+[9.102949] (-) TimerEvent: {}
+[9.204028] (-) TimerEvent: {}
+[9.305247] (-) TimerEvent: {}
+[9.406518] (-) TimerEvent: {}
+[9.452279] (robotic_arm_cube_handling) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/rolling/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:223 (message):\n'}
+[9.453517] (robotic_arm_cube_handling) StderrLine: {'line': b'  Packages installing interfaces must include\n'}
+[9.454871] (robotic_arm_cube_handling) StderrLine: {'line': b"  '<member_of_group>rosidl_interface_packages</member_of_group>' in their\n"}
+[9.455694] (robotic_arm_cube_handling) StderrLine: {'line': b'  package.xml\n'}
+[9.456489] (robotic_arm_cube_handling) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[9.457391] (robotic_arm_cube_handling) StderrLine: {'line': b'  CMakeLists.txt:13 (rosidl_generate_interfaces)\n'}
+[9.458247] (robotic_arm_cube_handling) StderrLine: {'line': b'\n'}
+[9.459064] (robotic_arm_cube_handling) StderrLine: {'line': b'\x1b[0m\n'}
+[9.459814] (robotic_arm_cube_handling) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[9.506971] (-) TimerEvent: {}
+[9.552240] (robotic_arm_cube_handling) CommandEnded: {'returncode': 1}
+[9.607256] (-) TimerEvent: {}
+[9.708434] (-) TimerEvent: {}
+[9.755375] (robotic_arm_cube_handling) JobEnded: {'identifier': 'robotic_arm_cube_handling', 'rc': 1}
+[9.769058] (-) EventReactorShutdown: {}

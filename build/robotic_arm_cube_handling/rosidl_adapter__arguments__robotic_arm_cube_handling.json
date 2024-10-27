@@ -1,0 +1,6 @@
+{
+  "package_name": "robotic_arm_cube_handling",
+  "non_idl_tuples": [
+    "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling:msg/CalibrationParams.msg"
+  ]
+}
