@@ -113,9 +113,6 @@ $env:COLCON_CURRENT_PREFIX=(Get-Item $PSCommandPath).Directory.Parent.Parent.Ful
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/robotic_arm_cube_handling/hook/cmake_prefix_path.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/robotic_arm_cube_handling/hook/ld_library_path_lib.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/robotic_arm_cube_handling/hook/pythonpath.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/robotic_arm_cube_handling/hook/ros_package_path.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/robotic_arm_cube_handling/hook/catkin_pythonpath.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/robotic_arm_cube_handling/hook/pkg_config_path.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/robotic_arm_cube_handling/hook/pkg_config_path_multiarch.ps1"
+colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/robotic_arm_cube_handling/local_setup.ps1"
 
 Remove-Item Env:\COLCON_CURRENT_PREFIX

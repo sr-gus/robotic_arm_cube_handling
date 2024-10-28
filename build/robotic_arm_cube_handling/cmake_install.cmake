@@ -375,6 +375,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robotic_arm_cube_handling" TYPE PROGRAM FILES
+    "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/src/camera_node.py"
+    "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/src/image_processing_node.py"
+    "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/src/calibration_node.py"
+    "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/src/mqtt_publisher_node.py"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_cube_handling" TYPE DIRECTORY FILES
     "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/launch"
     "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/config"

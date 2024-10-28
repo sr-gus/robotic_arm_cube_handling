@@ -23,5 +23,12 @@ def generate_launch_description():
             name='calibration_node',
             output='screen',
             prefix='python3'
+        ),
+        Node(
+            package='robotic_arm_cube_handling',
+            executable='mqtt_publisher_node.py',
+            name='mqtt_publisher_node',
+            output='screen',
+            prefix='python3'
         )
     ])

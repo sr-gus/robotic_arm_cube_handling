@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from robotic_arm_handling.msg import CalibrationParams
+from robotic_arm_cube_handling.msg import CalibrationParams
 
 class CalibrationPublisher(Node):
     def __init__(self):

@@ -81,10 +81,7 @@ _colcon_package_sh_source_script() {
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/robotic_arm_cube_handling/hook/cmake_prefix_path.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/robotic_arm_cube_handling/hook/ld_library_path_lib.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/robotic_arm_cube_handling/hook/pythonpath.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/robotic_arm_cube_handling/hook/ros_package_path.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/robotic_arm_cube_handling/hook/catkin_pythonpath.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/robotic_arm_cube_handling/hook/pkg_config_path.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/robotic_arm_cube_handling/hook/pkg_config_path_multiarch.sh"
+_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/robotic_arm_cube_handling/local_setup.sh"
 
 unset _colcon_package_sh_source_script
 unset COLCON_CURRENT_PREFIX

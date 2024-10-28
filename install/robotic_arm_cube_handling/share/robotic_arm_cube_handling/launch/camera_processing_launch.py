@@ -5,20 +5,23 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='robotic_arm_cube_handling',
-            executable='camera_node',
+            executable='camera_node.py',
             name='camera_node',
-            output='screen'
+            output='screen',
+            prefix='python3'
         ),
         Node(
             package='robotic_arm_cube_handling',
-            executable='image_processing_node',
+            executable='image_processing_node.py',
             name='image_processing_node',
-            output='screen'
+            output='screen',
+            prefix='python3'
         ),
         Node(
             package='robotic_arm_cube_handling',
-            executable='calibration_node',
+            executable='calibration_node.py',
             name='calibration_node',
-            output='screen'
+            output='screen',
+            prefix='python3'
         )
     ])
