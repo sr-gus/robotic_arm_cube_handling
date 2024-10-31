@@ -30,5 +30,12 @@ def generate_launch_description():
             name='mqtt_publisher_node',
             output='screen',
             prefix='python3'
+        ),
+        Node(
+            package='robotic_arm_cube_handling',
+            executable='servo_control_node.py',
+            name='servo_control_node',
+            output='screen',
+            prefix='python3'
         )
     ])
