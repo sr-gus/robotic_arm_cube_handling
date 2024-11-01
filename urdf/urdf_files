@@ -1,1 +1,583 @@
+<?xml version="1.0" ?>
+<robot name="BrazoRoboticoURDF">
 
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0008893073972662581 0.00021210798931090667 -0.027286190705140215" rpy="0 0 0"/>
+    <mass value="0.09767747102763898"/>
+    <inertia ixx="0.00011859266625598767" iyy="0.00012930675855794626" izz="0.00020552422033005987" ixy="-6.139896989185107e-19" iyz="-1.607245017415035e-19" ixz="-1.405895835811551e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_mg996r1">
+  <inertial>
+    <origin xyz="-0.020990345481273397 1.0799161897161831e-07 -0.00844199767407532" rpy="0 0 0"/>
+    <mass value="0.26593215070851495"/>
+    <inertia ixx="4.590608978774681e-05" iyy="7.526163410502684e-05" izz="4.7309868572501944e-05" ixy="2.230758880788624e-13" iyz="-1.0577289624003712e-14" ixz="2.14136439028683e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.03075 -0.000212 0.018312" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/servo_mg996r1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.03075 -0.000212 0.018312" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/servo_mg996r1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rotating_waste1">
+  <inertial>
+    <origin xyz="-0.005402843567627666 0.004541088695584565 0.019422861318637963" rpy="0 0 0"/>
+    <mass value="0.09510513374867274"/>
+    <inertia ixx="7.737404487154786e-05" iyy="7.548906025642846e-05" izz="7.493756600239388e-05" ixy="-5.39620266542545e-06" iyz="-5.434252126049257e-06" ixz="6.465654897778297e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.000212 -0.000288" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotating_waste1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.000212 -0.000288" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotating_waste1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_mg996r2">
+  <inertial>
+    <origin xyz="0.023381785687001524 0.05557405978792086 0.019327237491966832" rpy="0 0 0"/>
+    <mass value="0.26593215070851495"/>
+    <inertia ixx="5.8881146916085736e-05" iyy="6.3690355761457e-05" izz="4.590608978776985e-05" ixy="1.376746805577352e-05" iyz="1.3777695132427016e-06" ixz="-1.639265878486195e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.044083 0.037963 -0.014751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/servo_mg996r2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.044083 0.037963 -0.014751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/servo_mg996r2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_link_11">
+  <inertial>
+    <origin xyz="0.04420061021397172 -0.0367731617429205 0.08024625797495563" rpy="0 0 0"/>
+    <mass value="0.14626215309797902"/>
+    <inertia ixx="0.0004493471183444134" iyy="0.0004459271561403906" izz="3.2685208197066415e-05" ixy="-9.792468519662886e-06" iyz="-2.3905415436482587e-09" ixz="2.653636552792278e-09"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.036309 -0.030353 -0.033588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/arm_link_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.036309 -0.030353 -0.033588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/arm_link_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_mg996r_1">
+  <inertial>
+    <origin xyz="-0.020701214315968122 0.017399059784385943 0.00975954652942157" rpy="0 0 0"/>
+    <mass value="0.26593215070851495"/>
+    <inertia ixx="5.8881146936917705e-05" iyy="6.369035574061051e-05" izz="4.590608978775334e-05" ixy="1.376746805940923e-05" iyz="-1.3777698547818087e-06" ixz="1.6392655914283013e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.000212 -0.183838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/servo_mg996r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.000212 -0.183838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/servo_mg996r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_link_21">
+  <inertial>
+    <origin xyz="0.006881745919331201 0.0006162757910309425 -0.0025511799013953618" rpy="0 0 0"/>
+    <mass value="0.08515545053956855"/>
+    <inertia ixx="0.00011867371972558265" iyy="0.0001163781979950703" izz="2.253292455552669e-05" ixy="-6.635842369094157e-06" iyz="-3.5096635992074954e-07" ixz="8.366555318312541e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.015619 -0.006808 -0.218088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/arm_link_21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.015619 -0.006808 -0.218088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/arm_link_21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="microservo1">
+  <inertial>
+    <origin xyz="0.009155056348053879 0.010892018326897856 -0.0055394649271707785" rpy="0 0 0"/>
+    <mass value="0.05595936511348751"/>
+    <inertia ixx="4.7450193207407634e-06" iyy="4.407806425838975e-06" izz="3.357058889373245e-06" ixy="-9.653495883790915e-07" iyz="-2.150261259726931e-07" ixz="-1.807251083963562e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.018525 0.002245 -0.275988" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/microservo1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.018525 0.002245 -0.275988" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/microservo1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="microservo_horn1">
+  <inertial>
+    <origin xyz="-0.0025351817131427923 -0.00301587065580536 -0.0008090168028946909" rpy="0 0 0"/>
+    <mass value="0.0017685056450420283"/>
+    <inertia ixx="3.620212633907412e-08" iyy="2.838107632515221e-08" izz="5.8040764486827343e-08" ixy="-2.2389559232297614e-08" iyz="4.314688514829195e-09" ixz="3.6264084559641153e-09"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.006364 -0.012223 -0.287838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/microservo_horn1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.006364 -0.012223 -0.287838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/microservo_horn1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_link1">
+  <inertial>
+    <origin xyz="0.007594679736015045 0.0033240288712300834 0.018450471828407145" rpy="0 0 0"/>
+    <mass value="0.02167478070167801"/>
+    <inertia ixx="6.012000089835375e-06" iyy="5.827439510827821e-06" izz="3.13886424467148e-06" ixy="-5.103958370157124e-07" iyz="2.7643161021238897e-07" ixz="-3.101726678092113e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.014407 -0.002654 -0.288838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/arm_link1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.014407 -0.002654 -0.288838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/arm_link1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="microservo_1">
+  <inertial>
+    <origin xyz="-0.004240930341962239 0.003564382190383202 -0.0108716731122398" rpy="0 0 0"/>
+    <mass value="0.05595936511348751"/>
+    <inertia ixx="4.267517023909435e-06" iyy="4.645917983926023e-06" izz="3.5964496281080196e-06" ixy="1.0832600089149727e-06" iyz="1.8072511001794318e-07" ixz="-2.1502612460979676e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.007451 -0.006465 -0.324088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/microservo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.007451 -0.006465 -0.324088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/microservo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gripper_base1">
+  <inertial>
+    <origin xyz="-0.0043116542767078405 -0.0026367247393586316 0.024485025232290236" rpy="0 0 0"/>
+    <mass value="0.01651044300442688"/>
+    <inertia ixx="5.761731282430621e-06" iyy="6.032392894390198e-06" izz="2.7391557744797085e-06" ixy="7.129682221215002e-07" iyz="3.0172204323350457e-07" ixz="1.0098101900401773e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.00162 0.001159 -0.317888" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gripper_base1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.00162 0.001159 -0.317888" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gripper_base1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="microservo_2">
+  <inertial>
+    <origin xyz="-0.26393760557307416 0.2445036571803944 0.048501892010890335" rpy="0 0 0"/>
+    <mass value="0.05595936511348751"/>
+    <inertia ixx="3.220649506020107e-06" iyy="3.732859011456799e-06" izz="5.556376118469697e-06" ixy="-1.662381927797881e-07" iyz="1.328147661294743e-18" ixz="1.7618285302889447e-18"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.259436 0.235417 -0.299586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/microservo_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.259436 0.235417 -0.299586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/microservo_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_main_arm1">
+  <inertial>
+    <origin xyz="-0.0014295406524620254 -0.001076143567145111 0.007264096207613535" rpy="0 0 0"/>
+    <mass value="0.0029939593689454966"/>
+    <inertia ixx="5.192698257804659e-07" iyy="5.315593096919978e-07" izz="1.0864998566807782e-07" ixy="4.814428641400056e-08" iyz="-5.06824071859534e-08" ixz="3.899060954251708e-08"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.018398 0.000186 -0.348088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gear_main_arm1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.018398 0.000186 -0.348088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gear_main_arm1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_secondary_link1">
+  <inertial>
+    <origin xyz="-0.0018671930462213528 -0.0023493805073585144 0.005610421632839535" rpy="0 0 0"/>
+    <mass value="0.004200165122561285"/>
+    <inertia ixx="6.319924399414943e-07" iyy="6.552211747173345e-07" izz="1.6020951872949948e-07" ixy="6.649760994172835e-08" iyz="4.311909137291511e-08" ixz="-5.1302949068116106e-08"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.002195 0.017494 -0.348088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gear_secondary_link1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.002195 0.017494 -0.348088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gear_secondary_link1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gripper_grip1">
+  <inertial>
+    <origin xyz="-0.0007217221997235963 0.006158358391228958 0.026889488896434055" rpy="0 0 0"/>
+    <mass value="0.04236978910676513"/>
+    <inertia ixx="1.2911491506827424e-05" iyy="1.3071212206321008e-05" izz="1.4385210458735907e-06" ixy="4.5723733457452186e-07" iyz="-1.8860893027685646e-06" ixz="2.2440626728663956e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.020183 -0.003927 -0.378575" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gripper_grip1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.020183 -0.003927 -0.378575" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gripper_grip1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gripper_grip2">
+  <inertial>
+    <origin xyz="-0.28906708700873396 0.2251181747288224 0.08774376670286343" rpy="0 0 0"/>
+    <mass value="0.04236978910676513"/>
+    <inertia ixx="1.2399384772613688e-05" iyy="1.2709456802731563e-05" izz="2.3123831836758575e-06" ixy="8.876526901508702e-07" iyz="2.693064318447767e-06" ixz="-3.2041988169836336e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.302804 0.246761 -0.317004" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gripper_grip2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.302804 0.246761 -0.317004" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/gripper_grip2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="base_motor" type="fixed">
+  <origin xyz="0.03075 0.000212 -0.018312" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="servo_mg996r1"/>
+</joint>
+
+<joint name="arm_joint_1" type="continuous">
+  <origin xyz="-0.03075 0.0 0.0186" rpy="0 0 0"/>
+  <parent link="servo_mg996r1"/>
+  <child link="rotating_waste1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+<transmission name="arm_joint_1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="arm_joint_1">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="arm_joint_1_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="arm_motor_1" type="fixed">
+  <origin xyz="-0.044083 -0.038175 0.014463" rpy="0 0 0"/>
+  <parent link="rotating_waste1"/>
+  <child link="servo_mg996r2"/>
+</joint>
+
+<joint name="arm_joint_2" type="revolute">
+  <origin xyz="0.007774 0.068316 0.018837" rpy="0 0 0"/>
+  <parent link="servo_mg996r2"/>
+  <child link="arm_link_11"/>
+  <axis xyz="0.765524 -0.643407 -0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+<transmission name="arm_joint_2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="arm_joint_2">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="arm_joint_2_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="arm_joint_3" type="revolute">
+  <origin xyz="0.036309 -0.030141 0.15025" rpy="0 0 0"/>
+  <parent link="arm_link_11"/>
+  <child link="servo_mg996r_1"/>
+  <axis xyz="-0.765524 0.643407 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+<transmission name="arm_joint_3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="arm_joint_3">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="arm_joint_3_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="arm_motor_2" type="fixed">
+  <origin xyz="-0.015619 0.006596 0.03425" rpy="0 0 0"/>
+  <parent link="servo_mg996r_1"/>
+  <child link="arm_link_21"/>
+</joint>
+
+<joint name="arm_motor_3" type="fixed">
+  <origin xyz="-0.002906 -0.009053 0.0579" rpy="0 0 0"/>
+  <parent link="arm_link_21"/>
+  <child link="microservo1"/>
+</joint>
+
+<joint name="arm_joint_4" type="revolute">
+  <origin xyz="0.012161 0.014468 0.01185" rpy="0 0 0"/>
+  <parent link="microservo1"/>
+  <child link="microservo_horn1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+<transmission name="arm_joint_4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="arm_joint_4">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="arm_joint_4_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="arm_motor_4" type="fixed">
+  <origin xyz="-0.008043 -0.009569 0.001" rpy="0 0 0"/>
+  <parent link="microservo_horn1"/>
+  <child link="arm_link1"/>
+</joint>
+
+<joint name="arm_motor_5" type="fixed">
+  <origin xyz="0.006956 0.003811 0.03525" rpy="0 0 0"/>
+  <parent link="arm_link1"/>
+  <child link="microservo_1"/>
+</joint>
+
+<joint name="gripper_joint_1" type="revolute">
+  <origin xyz="0.009071 -0.007624 -0.0062" rpy="0 0 0"/>
+  <parent link="microservo_1"/>
+  <child link="gripper_base1"/>
+  <axis xyz="0.765524 -0.643407 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+<transmission name="gripper_joint_1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gripper_joint_1">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gripper_joint_1_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="gripper_motor_1" type="fixed">
+  <origin xyz="0.257816 -0.234258 -0.018302" rpy="0 0 0"/>
+  <parent link="gripper_base1"/>
+  <child link="microservo_2"/>
+</joint>
+
+<joint name="gripper_joint_2" type="revolute">
+  <origin xyz="-0.020018 0.000973 0.0302" rpy="0 0 0"/>
+  <parent link="gripper_base1"/>
+  <child link="gear_main_arm1"/>
+  <axis xyz="-0.643407 -0.765524 -0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+<transmission name="gripper_joint_2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gripper_joint_2">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gripper_joint_2_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="gripper_joint_3" type="revolute">
+  <origin xyz="0.000575 -0.016335 0.0302" rpy="0 0 0"/>
+  <parent link="gripper_base1"/>
+  <child link="gear_secondary_link1"/>
+  <axis xyz="-0.643407 -0.765524 -0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+<transmission name="gripper_joint_3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gripper_joint_3">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gripper_joint_3_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_51" type="continuous">
+  <origin xyz="-0.001785 0.004113 0.030487" rpy="0 0 0"/>
+  <parent link="gear_main_arm1"/>
+  <child link="gripper_grip1"/>
+  <axis xyz="0.643407 0.765524 0.0"/>
+</joint>
+<transmission name="Revolute_51_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_51">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_51_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_52" type="continuous">
+  <origin xyz="0.300609 -0.229267 -0.031084" rpy="0 0 0"/>
+  <parent link="gear_secondary_link1"/>
+  <child link="gripper_grip2"/>
+  <axis xyz="-0.643407 -0.765524 -0.0"/>
+</joint>
+<transmission name="Revolute_52_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_52">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_52_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
