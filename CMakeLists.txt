@@ -25,7 +25,6 @@ install(
     PROGRAMS
     src/camera_node.py
     src/image_processing_node.py
-    src/calibration_node.py
     src/mqtt_publisher_node.py
     src/servo_control_node.py
     DESTINATION lib/${PROJECT_NAME}

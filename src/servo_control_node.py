@@ -19,7 +19,7 @@ class ServoControllerNode(Node):
 
         self.i2c = busio.I2C(board.SCL, board.SDA)
         self.pca = PCA9685(self.i2c)
-        self.pca.frequency = 50
+        self.pca.frequency = 60
         self.get_logger().info("PCA9685 inicializado a 50 Hz.")
 
         self.servos = [servo.Servo(self.pca.channels[i]) for i in range(5)]
@@ -69,10 +69,15 @@ class ServoControllerNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    servo_controller = ServoControllerNode()
-    rclpy.spin(servo_controller)
-    servo_controller.destroy_node()
-    rclpy.shutdown()
+    node = ServoControllerNode()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        node.get_logger().info('Shutting down due to CTRL+C')
+    finally:
+        if rclpy.ok():
+            node.destroy_node()
+            rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

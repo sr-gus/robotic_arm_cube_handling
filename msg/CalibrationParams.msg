@@ -1,3 +1,4 @@
+int32 camera_id
 int32 lower_h
 int32 upper_h
 int32 lower_s
