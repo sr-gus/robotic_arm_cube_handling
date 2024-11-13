@@ -30,5 +30,20 @@ def generate_launch_description():
             name='servo_control_node',
             output='screen',
             prefix='python3'
-        )
+        ),
+        Node(
+            package='robotic_arm_cube_handling',
+            executable='led_controller.py',
+            name='led_controller',
+            output='screen',
+            prefix='python3'
+        ),
+         Node(
+            package='robotic_arm_cube_handling',
+            executable='inverse_kinematics.py',
+            name='inverse_kinematics_node',
+            output='screen',
+               
+        ),
+
     ])

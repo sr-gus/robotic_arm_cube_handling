@@ -116,16 +116,19 @@ class ImageProcessingNode(Node):
 
         for contour in contours:
             area = cv2.contourArea(contour)
-            if area > 500:
+            if area > 100 and area < 10000:
                 epsilon = 0.02 * cv2.arcLength(contour, True)
                 approx = cv2.approxPolyDP(contour, epsilon, True)
-                if len(approx) == 4:
+                if len(approx) >= 4 and len(approx) <= 6:
                     M = cv2.moments(contour)
                     if M["m00"] > 0:
                         cx = int(M["m10"] / M["m00"])
                         cy = int(M["m01"] / M["m00"])
                         cv2.drawContours(output_frame, [contour], 0, (0, 255, 0), 2)
                         cv2.circle(output_frame, (cx, cy), 5, (0, 0, 255), -1)
+                        self.get_logger().info(f'Coordenadas: ({cx}, {cy})')
+                        self.get_logger().info(f'Area: {area}')
+
 
         return output_frame
 

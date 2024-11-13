@@ -27,6 +27,8 @@ install(
     src/image_processing_node.py
     src/mqtt_publisher_node.py
     src/servo_control_node.py
+    src/led_controller.py
+    src/inverse_kinematics.py
     DESTINATION lib/${PROJECT_NAME}
 )
 
