@@ -1,8 +1,0 @@
-setup.py
-robotic_arm_cube_handling/__init__.py
-robotic_arm_cube_handling.egg-info/PKG-INFO
-robotic_arm_cube_handling.egg-info/SOURCES.txt
-robotic_arm_cube_handling.egg-info/dependency_links.txt
-robotic_arm_cube_handling.egg-info/top_level.txt
-robotic_arm_cube_handling/msg/__init__.py
-robotic_arm_cube_handling/msg/_calibration_params.py

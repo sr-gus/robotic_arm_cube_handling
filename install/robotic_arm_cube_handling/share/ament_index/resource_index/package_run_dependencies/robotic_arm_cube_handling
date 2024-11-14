@@ -1,1 +1,0 @@
-rosidl_default_generators;rclpy;sensor_msgs;geometry_msgs;std_msgs;cv_bridge;rosidl_default_runtime;launch

@@ -1,7 +1,0 @@
-{
-  "package_name": "robotic_arm_cube_handling",
-  "output_dir": "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling/rosidl_generator_type_description/robotic_arm_cube_handling",
-  "idl_tuples": [
-    "/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling/rosidl_adapter/robotic_arm_cube_handling:msg/CalibrationParams.idl"
-  ]
-}
