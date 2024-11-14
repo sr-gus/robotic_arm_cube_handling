@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robotic_arm_cube_handling/msg/CalibrationParams.msg
+// generated code does not contain a copyright notice
+
+
+module robotic_arm_cube_handling {
+  module msg {
+    struct CalibrationParams {
+      int32 lower_h;
+
+      int32 upper_h;
+
+      int32 lower_s;
+
+      int32 upper_s;
+
+      int32 lower_v;
+
+      int32 upper_v;
+
+      int32 canny_threshold1;
+
+      int32 canny_threshold2;
+    };
+  };
+};

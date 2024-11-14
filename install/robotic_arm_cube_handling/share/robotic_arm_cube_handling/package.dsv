@@ -1,0 +1,14 @@
+source;share/robotic_arm_cube_handling/hook/cmake_prefix_path.ps1
+source;share/robotic_arm_cube_handling/hook/cmake_prefix_path.dsv
+source;share/robotic_arm_cube_handling/hook/cmake_prefix_path.sh
+source;share/robotic_arm_cube_handling/hook/ld_library_path_lib.ps1
+source;share/robotic_arm_cube_handling/hook/ld_library_path_lib.dsv
+source;share/robotic_arm_cube_handling/hook/ld_library_path_lib.sh
+source;share/robotic_arm_cube_handling/hook/pythonpath.ps1
+source;share/robotic_arm_cube_handling/hook/pythonpath.dsv
+source;share/robotic_arm_cube_handling/hook/pythonpath.sh
+source;share/robotic_arm_cube_handling/local_setup.bash
+source;share/robotic_arm_cube_handling/local_setup.dsv
+source;share/robotic_arm_cube_handling/local_setup.ps1
+source;share/robotic_arm_cube_handling/local_setup.sh
+source;share/robotic_arm_cube_handling/local_setup.zsh

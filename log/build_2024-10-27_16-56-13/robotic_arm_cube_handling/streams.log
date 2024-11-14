@@ -1,0 +1,157 @@
+[0.097s] Invoking command in '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling': /usr/bin/cmake --build /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling -- -j4 -l4
+[0.549s] [  2%] Built target robotic_arm_cube_handling__rosidl_generator_type_description
+[0.640s] [  2%] Built target ament_cmake_python_copy_robotic_arm_cube_handling
+[0.740s] [  5%] Built target robotic_arm_cube_handling__cpp
+[0.772s] [ 20%] Built target robotic_arm_cube_handling__rosidl_generator_c
+[1.031s] [ 29%] Built target robotic_arm_cube_handling__rosidl_typesupport_cpp
+[1.048s] [ 38%] Built target robotic_arm_cube_handling__rosidl_typesupport_fastrtps_c
+[1.056s] [ 47%] Built target robotic_arm_cube_handling__rosidl_typesupport_fastrtps_cpp
+[1.288s] [ 64%] Built target robotic_arm_cube_handling__rosidl_typesupport_c
+[1.292s] [ 64%] Built target robotic_arm_cube_handling__rosidl_typesupport_introspection_c
+[1.317s] [ 73%] Built target robotic_arm_cube_handling__rosidl_typesupport_introspection_cpp
+[1.510s] [ 73%] Built target robotic_arm_cube_handling
+[1.703s] [ 76%] Built target robotic_arm_cube_handling__py
+[1.930s] [ 82%] Built target robotic_arm_cube_handling__rosidl_generator_py
+[2.186s] [ 88%] Built target robotic_arm_cube_handling_s__rosidl_typesupport_fastrtps_c
+[2.191s] [ 94%] Built target robotic_arm_cube_handling_s__rosidl_typesupport_introspection_c
+[2.196s] [100%] Built target robotic_arm_cube_handling_s__rosidl_typesupport_c
+[2.818s] running egg_info
+[2.986s] writing robotic_arm_cube_handling.egg-info/PKG-INFO
+[2.988s] writing dependency_links to robotic_arm_cube_handling.egg-info/dependency_links.txt
+[2.990s] writing top-level names to robotic_arm_cube_handling.egg-info/top_level.txt
+[3.467s] reading manifest file 'robotic_arm_cube_handling.egg-info/SOURCES.txt'
+[3.472s] writing manifest file 'robotic_arm_cube_handling.egg-info/SOURCES.txt'
+[3.748s] [100%] Built target ament_cmake_python_build_robotic_arm_cube_handling_egg
+[3.845s] Invoked command in '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling' returned '0': /usr/bin/cmake --build /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling -- -j4 -l4
+[5.210s] Invoking command in '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling': /usr/bin/cmake --install /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling
+[5.279s] -- Install configuration: ""
+[5.280s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/ament_index/resource_index/rosidl_interfaces/robotic_arm_cube_handling
+[5.282s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/msg/CalibrationParams.json
+[5.283s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling
+[5.284s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg
+[5.285s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_generator_c__visibility_control.h
+[5.286s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/calibration_params.h
+[5.287s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail
+[5.288s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.c
+[5.289s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.h
+[5.290s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__functions.h
+[5.291s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__struct.h
+[5.292s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__functions.c
+[5.294s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__description.c
+[5.295s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/library_path.sh
+[5.295s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/library_path.dsv
+[5.297s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_generator_c.so
+[5.299s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling
+[5.300s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg
+[5.301s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.302s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail
+[5.303s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__rosidl_typesupport_fastrtps_c.h
+[5.305s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_fastrtps_c.so
+[5.308s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling
+[5.309s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg
+[5.310s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/calibration_params.hpp
+[5.311s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail
+[5.312s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__struct.hpp
+[5.313s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.hpp
+[5.314s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__builder.hpp
+[5.316s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__traits.hpp
+[5.317s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.318s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling
+[5.319s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg
+[5.320s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.321s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail
+[5.322s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__rosidl_typesupport_fastrtps_cpp.hpp
+[5.323s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/dds_fastrtps
+[5.324s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_fastrtps_cpp.so
+[5.325s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling
+[5.326s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg
+[5.327s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.328s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail
+[5.329s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.c
+[5.332s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__rosidl_typesupport_introspection_c.h
+[5.334s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_introspection_c.so
+[5.338s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_c.so
+[5.341s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling
+[5.342s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg
+[5.342s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail
+[5.344s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__type_support.cpp
+[5.345s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/include/robotic_arm_cube_handling/robotic_arm_cube_handling/msg/detail/calibration_params__rosidl_typesupport_introspection_cpp.hpp
+[5.346s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_introspection_cpp.so
+[5.350s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_typesupport_cpp.so
+[5.353s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/pythonpath.sh
+[5.354s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/pythonpath.dsv
+[5.355s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info
+[5.356s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info/dependency_links.txt
+[5.358s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info/PKG-INFO
+[5.361s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info/top_level.txt
+[5.364s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling-0.0.0-py3.12.egg-info/SOURCES.txt
+[5.367s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling
+[5.368s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_introspection_c.so
+[5.369s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_fastrtps_c.so
+[5.370s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_c.so
+[5.371s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg
+[5.372s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg/_calibration_params.py
+[5.373s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg/_calibration_params_s.c
+[5.375s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg/__init__.py
+[5.376s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/_robotic_arm_cube_handling_s.ep.rosidl_typesupport_introspection_c.c
+[5.376s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/__init__.py
+[5.377s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/_robotic_arm_cube_handling_s.ep.rosidl_typesupport_c.c
+[5.378s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/_robotic_arm_cube_handling_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.666s] Listing '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling'...
+[5.667s] Listing '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/msg'...
+[5.730s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_fastrtps_c.so
+[5.734s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_introspection_c.so
+[5.740s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/python3.12/site-packages/robotic_arm_cube_handling/robotic_arm_cube_handling_s__rosidl_typesupport_c.so
+[5.745s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/librobotic_arm_cube_handling__rosidl_generator_py.so
+[5.748s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/msg/CalibrationParams.idl
+[5.749s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/msg/CalibrationParams.msg
+[5.750s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling
+[5.751s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling/publish_calibration_params.py
+[5.752s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling/image_processing_node.py
+[5.753s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling/calibration_node.py
+[5.755s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/lib/robotic_arm_cube_handling/camera_node.py
+[5.756s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/launch
+[5.757s] -- Up-to-date: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/launch/camera_processing_launch.py
+[5.758s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/config
+[5.759s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/urdf
+[5.760s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/rviz
+[5.761s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/ament_index/resource_index/package_run_dependencies/robotic_arm_cube_handling
+[5.762s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/ament_index/resource_index/parent_prefix_path/robotic_arm_cube_handling
+[5.765s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/ament_prefix_path.sh
+[5.768s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/ament_prefix_path.dsv
+[5.771s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/path.sh
+[5.773s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/environment/path.dsv
+[5.776s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/local_setup.bash
+[5.778s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/local_setup.sh
+[5.781s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/local_setup.zsh
+[5.783s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/local_setup.dsv
+[5.786s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/package.dsv
+[5.789s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/ament_index/resource_index/packages/robotic_arm_cube_handling
+[5.793s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/export_robotic_arm_cube_handling__rosidl_generator_cExport.cmake
+[5.796s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/export_robotic_arm_cube_handling__rosidl_generator_cExport-noconfig.cmake
+[5.799s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/export_robotic_arm_cube_handling__rosidl_typesupport_fastrtps_cExport.cmake
+[5.802s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/export_robotic_arm_cube_handling__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.806s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/export_robotic_arm_cube_handling__rosidl_generator_cppExport.cmake
+[5.809s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/export_robotic_arm_cube_handling__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.813s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/export_robotic_arm_cube_handling__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.816s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handling__rosidl_typesupport_introspection_cExport.cmake
+[5.819s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handling__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.823s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handling__rosidl_typesupport_cExport.cmake
+[5.826s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handling__rosidl_typesupport_cExport-noconfig.cmake
+[5.829s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handling__rosidl_typesupport_introspection_cppExport.cmake
+[5.832s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handling__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.835s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handling__rosidl_typesupport_cppExport.cmake
+[5.838s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handling__rosidl_typesupport_cppExport-noconfig.cmake
+[5.841s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/export_robotic_arm_cube_handling__rosidl_generator_pyExport.cmake
+[5.845s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/export_robotic_arm_cube_handling__rosidl_generator_pyExport-noconfig.cmake
+[5.848s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/rosidl_cmake-extras.cmake
+[5.850s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.853s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/ament_cmake_export_libraries-extras.cmake
+[5.856s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/ament_cmake_export_targets-extras.cmake
+[5.859s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.862s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.865s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.868s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handlingConfig.cmake
+[5.870s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/cmake/robotic_arm_cube_handlingConfig-version.cmake
+[5.873s] -- Installing: /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/install/robotic_arm_cube_handling/share/robotic_arm_cube_handling/package.xml
+[5.889s] Invoked command in '/home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling' returned '0': /usr/bin/cmake --install /home/raspberrypi/ros2_ws/src/robotic_arm_cube_handling/build/robotic_arm_cube_handling
