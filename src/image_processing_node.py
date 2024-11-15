@@ -12,6 +12,7 @@ class ImageProcessingNode(Node):
         super().__init__('image_processing_node')
         self.bridge = CvBridge()
 
+        # Suscripciones a las imágenes de las cámaras
         self.camera0_subscription = self.create_subscription(
             Image,
             '/camera0/image_raw',
@@ -25,27 +26,42 @@ class ImageProcessingNode(Node):
             10
         )
 
+        # Publicadores para los resultados de procesamiento de cada cámara
+        self.color_mask_pub0 = self.create_publisher(Image, '/camera0/color_mask', 10)
+        self.canny_edges_pub0 = self.create_publisher(Image, '/camera0/canny_edges', 10)
+        self.final_output_pub0 = self.create_publisher(Image, '/camera0/final_output', 10)
+
+        self.color_mask_pub1 = self.create_publisher(Image, '/camera1/color_mask', 10)
+        self.canny_edges_pub1 = self.create_publisher(Image, '/camera1/canny_edges', 10)
+        self.final_output_pub1 = self.create_publisher(Image, '/camera1/final_output', 10)
+
         self.cube_info_pub = self.create_publisher(Float32MultiArray, '/cube_info', 10)
         self.target_position_pub = self.create_publisher(Float32MultiArray, '/target_position', 10)
         self.led_color_pub = self.create_publisher(Int32MultiArray, '/led_color', 10)
 
+        # Tiempo de última imagen recibida para cada cámara
         self.last_image_time_camera0 = self.get_clock().now()
         self.last_image_time_camera1 = self.get_clock().now()
 
+        # Temporizador para verificar el tiempo de espera de la imagen
         self.timer = self.create_timer(1.0, self.check_image_timeout)
 
+        self.best_cube_info = None
+        self.best_cube_info_reset = 0
+
+        # Parámetros de calibración de procesamiento de imágenes
         self.declare_parameters(
             namespace='',
             parameters=[
                 ('camera0_lower_h', 0), ('camera0_upper_h', 20),
-                ('camera0_lower_s', 180), ('camera0_upper_s', 255),
-                ('camera0_lower_v', 60), ('camera0_upper_v', 80),
-                ('camera0_canny_threshold1', 100), ('camera0_canny_threshold2', 200),
-                
-                ('camera1_lower_h', 0), ('camera1_upper_h', 180),
-                ('camera1_lower_s', 0), ('camera1_upper_s', 255),
-                ('camera1_lower_v', 0), ('camera1_upper_v', 255),
-                ('camera1_canny_threshold1', 100), ('camera1_canny_threshold2', 200)
+                ('camera0_lower_s', 150), ('camera0_upper_s', 255),
+                ('camera0_lower_v', 130), ('camera0_upper_v', 255),
+                ('camera0_canny_threshold1', 25), ('camera0_canny_threshold2', 50),
+
+                ('camera1_lower_h', 0), ('camera1_upper_h', 20),
+                ('camera1_lower_s', 150), ('camera1_upper_s', 255),
+                ('camera1_lower_v', 130), ('camera1_upper_v', 255),
+                ('camera1_canny_threshold1', 25), ('camera1_canny_threshold2', 50)
             ]
         )
 
@@ -86,19 +102,30 @@ class ImageProcessingNode(Node):
         frame = self.bridge.imgmsg_to_cv2(msg, 'bgr8')
         processed_frame, cube_info = self.process_image(frame, camera_id)
 
+        # Publicar máscaras y salidas para cada cámara
+        mask_pub = self.color_mask_pub0 if camera_id == 0 else self.color_mask_pub1
+        edges_pub = self.canny_edges_pub0 if camera_id == 0 else self.canny_edges_pub1
+        final_pub = self.final_output_pub0 if camera_id == 0 else self.final_output_pub1
+
+        mask_pub.publish(self.bridge.cv2_to_imgmsg(processed_frame["mask"], "mono8"))
+        edges_pub.publish(self.bridge.cv2_to_imgmsg(processed_frame["edges"], "mono8"))
+        final_pub.publish(self.bridge.cv2_to_imgmsg(processed_frame["final"], "bgr8"))
+
+        # Publicar la información del cubo
         cube_msg = Float32MultiArray()
         cube_msg.data = [cube_info['x'], cube_info['y'], cube_info['area']]
 
         if cube_info['area'] == 0:
-            if hasattr(self, 'best_cube_info') and self.best_cube_info['camera_id'] == camera_id:
+            if not hasattr(self, 'best_cube_info') or self.best_cube_info is None or cube_info['area'] > self.best_cube_info.get('area', 0):
                 self.best_cube_info = None
-                self.publish_led_color([255, 0, 0])  
+                self.publish_led_color([255, 0, 0])
             return
         else:
             self.cube_info_pub.publish(cube_msg)
             self.publish_led_color([0, 255, 0])
 
-        if not hasattr(self, 'best_cube_info') or cube_info['area'] > self.best_cube_info['area']:
+        if self.best_cube_info is None or cube_info['area'] > self.best_cube_info.get('area', 0) or self.best_cube_info_reset > 10:
+            self.best_cube_info_reset = 0
             self.best_cube_info = cube_info
 
             if camera_id == 0:
@@ -113,6 +140,8 @@ class ImageProcessingNode(Node):
             self.target_position_pub.publish(target_msg)
 
             self.publish_led_color([0, 0, 255])
+        else:
+            self.best_cube_info_reset += 1
 
     def check_image_timeout(self):
         timeout_duration = rclpy.duration.Duration(seconds=2.0)
@@ -120,7 +149,7 @@ class ImageProcessingNode(Node):
         current_time = self.get_clock().now()
         if (current_time - self.last_image_time_camera0) > timeout_duration and \
            (current_time - self.last_image_time_camera1) > timeout_duration:
-            self.publish_led_color([255, 255, 255])  # Blanco: No se reciben imágenes de ninguna cámara
+            self.publish_led_color([255, 255, 255])
 
     def process_image(self, frame, camera_id):
         camera_prefix = f'camera{camera_id}'
@@ -139,12 +168,27 @@ class ImageProcessingNode(Node):
         mask = cv2.inRange(hsv, lower_bound, upper_bound)
 
         edges = cv2.Canny(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), canny_threshold1, canny_threshold2)
+        output_frame = self.detect_cube(frame, mask, edges)
 
-        x, y, area = self.detect_cube(mask)
+        x, y, area = self.get_cube_info(mask)
 
-        return frame, {'x': x, 'y': y, 'area': area}
+        return {"mask": mask, "edges": edges, "final": output_frame}, {'x': x, 'y': y, 'area': area}
 
-    def detect_cube(self, mask):
+    def detect_cube(self, frame, mask, edges):
+        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        for contour in contours:
+            area = cv2.contourArea(contour)
+            if 100 < area < 10000:
+                M = cv2.moments(contour)
+                if M['m00'] > 0:
+                    x = int(M['m10'] / M['m00'])
+                    y = int(M['m01'] / M['m00'])
+                    cv2.drawContours(frame, [contour], 0, (0, 255, 0), 2)
+                    cv2.circle(frame, (x, y), 5, (0, 0, 255), -1)
+                    break
+        return frame
+
+    def get_cube_info(self, mask):
         contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         x, y, area = 0, 0, 0
         for contour in contours:
@@ -158,21 +202,21 @@ class ImageProcessingNode(Node):
         return x, y, area
 
     def pixel_to_mm_camera0(self, x, y):
-        x_mm = x * 0.5
-        y_mm = y * 0.5
+        x_mm = (6/85)*x - 33.41
+        y_mm = -(3/4)*y + 292.5
         return x_mm, y_mm
 
     def pixel_to_mm_camera1(self, x, y):
-        x_mm = x * 0.4
-        y_mm = y * 0.4
+        x_mm = -(7/170)*x + 20.176
+        y_mm = (7/110)*y + 10.73
         return x_mm, y_mm
 
     def area_to_z_mm_camera0(self, area):
-        z_mm = 1000 / (area + 1)
+        z_mm = -(1/120)*area+54.17
         return z_mm
 
     def area_to_z_mm_camera1(self, area):
-        z_mm = 1200 / (area + 1)
+        z_mm = -(3/400)*area + 29.25
         return z_mm
 
 def main(args=None):

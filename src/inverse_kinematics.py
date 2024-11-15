@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
-from geometry_msgs.msg import Point
+from std_msgs.msg import Float32MultiArray
 from ikpy.chain import Chain
 from ament_index_python.packages import get_package_share_directory
 import numpy as np
@@ -24,7 +24,7 @@ class InverseKinematicsNode(Node):
         self.chain = Chain.from_urdf_file(urdf_path)
 
         self.create_subscription(
-            Point,
+            Float32MultiArray,
             'target_position',
             self.target_position_callback,
             10
@@ -33,11 +33,11 @@ class InverseKinematicsNode(Node):
         self.joint_pub = self.create_publisher(JointState, 'joint_states', 10)
 
         self.stability_window = 5
-        self.position_tolerance = 0.01 
+        self.position_tolerance = 1.5
         self.stable_detections = []
         self.last_position = None
-        self.movement_interval = 2.0  
-        self.max_time_between_detections = 1.0  
+        self.movement_interval = 2.0
+        self.max_time_between_detections = 2.0
         self.last_detection_time = self.get_clock().now()
         self.last_movement_time = self.get_clock().now()
 
@@ -50,10 +50,10 @@ class InverseKinematicsNode(Node):
             self.get_logger().info(f'Detection time exceeded ({time_since_last_detection:.2f}s). Restarting stable detections.')
 
         self.last_detection_time = current_time
-        current_position = np.array([msg.x, msg.y, msg.z])
+        current_position = np.array(msg.data[:3])
 
         if self.last_position is None or np.linalg.norm(current_position - self.last_position) > self.position_tolerance:
-            self.stable_detections = [] 
+            self.stable_detections = []
             self.get_logger().info('Position changed significantly. Restarting stable detections.')
         else:
             self.stable_detections.append(current_position)
@@ -72,7 +72,7 @@ class InverseKinematicsNode(Node):
             joint_angles = self.chain.inverse_kinematics(target_position)[1:]
             joint_state_msg = JointState()
             joint_state_msg.header.stamp = self.get_clock().now().to_msg()
-            joint_state_msg.name =  joint_names
+            joint_state_msg.name = joint_names
             joint_state_msg.position = joint_angles
             self.joint_pub.publish(joint_state_msg)
 
@@ -95,3 +95,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+

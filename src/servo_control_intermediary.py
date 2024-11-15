@@ -13,12 +13,12 @@ class ServoControlIntermediaryNode(Node):
         self.servo_publishers = [self.create_publisher(Float32, f'/servo_{i+1}_angle', 10) for i in range(5)]
         self.gripper_publisher = self.create_publisher(Bool, '/servo_gripper', 10)
 
-        self.resting_position = [0.0, 0.0, 0.0, 0.0, 0.0] 
+        self.resting_position = [90.0, 90.0, 180.0, 0.0, 0.0] 
 
     def joint_state_callback(self, msg):
         self.get_logger().info('Received joint_states, publishin angles to servos.')
         
-        for i, angle in enumerate(msg.position):
+        for i, angle in enumerate(msg.position[:5]):
             transformed_angle = self.apply_transformation(i, angle)
             servo_msg = Float32()
             servo_msg.data = transformed_angle
@@ -36,7 +36,7 @@ class ServoControlIntermediaryNode(Node):
         self.get_logger().info('Gripper closed.')
 
     def apply_transformation(self, joint_index, angle):
-        transformed_angle = angle * 1
+        transformed_angle = angle * 180 / 3.14159
 
         while transformed_angle < 0:
             transformed_angle += 180

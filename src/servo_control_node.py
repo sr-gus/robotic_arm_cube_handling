@@ -7,11 +7,11 @@ import busio
 from adafruit_pca9685 import PCA9685
 from adafruit_motor import servo
 
-SERVO_SPEED = 90.0  # [deg/s]
+SERVO_SPEED = 45.0  # [deg/s]
 SERVO_ANGLE_RATE = 1.0 / SERVO_SPEED
-GRIPPER_SPEED = 180.0  # [deg/s]
+GRIPPER_SPEED = 60.0  # [deg/s]
 GRIPPER_ANGLE_RATE = 1.0 / SERVO_SPEED
-GRIPPER_OPEN_ANGLE = 90
+GRIPPER_OPEN_ANGLE = 60
 GRIPPER_CLOSE_ANGLE = 0
 
 class ServoControllerNode(Node):
