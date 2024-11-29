@@ -26,6 +26,13 @@ class ImageProcessingNode(Node):
             10
         )
 
+        self.joint_states_subscription = self.create_subscription(
+            Float32MultiArray,  # Tipo del mensaje del tópico joint_states
+            '/joint_states',
+            self.joint_states_callback,
+            10
+        )
+
         # Publicadores para los resultados de procesamiento de cada cámara
         self.color_mask_pub0 = self.create_publisher(Image, '/camera0/color_mask', 10)
         self.canny_edges_pub0 = self.create_publisher(Image, '/camera0/canny_edges', 10)
@@ -42,9 +49,6 @@ class ImageProcessingNode(Node):
         # Tiempo de última imagen recibida para cada cámara
         self.last_image_time_camera0 = self.get_clock().now()
         self.last_image_time_camera1 = self.get_clock().now()
-
-        # Temporizador para verificar el tiempo de espera de la imagen
-        self.timer = self.create_timer(1.0, self.check_image_timeout)
 
         self.best_cube_info = None
         self.best_cube_info_reset = 0
@@ -74,6 +78,13 @@ class ImageProcessingNode(Node):
 
         self.get_logger().info('Dual camera processing node started with independent parameters for each camera.')
 
+    def joint_states_callback(self, msg):
+        self.get_logger().info('Joint states message received. Resetting best_cube_info to None.')
+        self.best_cube_info = None
+        self.publish_led_color([255, 255, 255])
+        time.sleep(10)
+        self.publish_led_color([0, 0, 0])
+
     def calibration_callback(self, msg):
         camera_prefix = f'camera{msg.camera_id}'
 
@@ -94,15 +105,10 @@ class ImageProcessingNode(Node):
         self.led_color_pub.publish(led_msg)
 
     def process_camera_image(self, msg, camera_id):
-        if camera_id == 0:
-            self.last_image_time_camera0 = self.get_clock().now()
-        else:
-            self.last_image_time_camera1 = self.get_clock().now()
-
         frame = self.bridge.imgmsg_to_cv2(msg, 'bgr8')
         processed_frame, cube_info = self.process_image(frame, camera_id)
 
-        # Publicar máscaras y salidas para cada cámara
+    # Publicar máscaras y salidas para cada cámara
         mask_pub = self.color_mask_pub0 if camera_id == 0 else self.color_mask_pub1
         edges_pub = self.canny_edges_pub0 if camera_id == 0 else self.canny_edges_pub1
         final_pub = self.final_output_pub0 if camera_id == 0 else self.final_output_pub1
@@ -111,45 +117,57 @@ class ImageProcessingNode(Node):
         edges_pub.publish(self.bridge.cv2_to_imgmsg(processed_frame["edges"], "mono8"))
         final_pub.publish(self.bridge.cv2_to_imgmsg(processed_frame["final"], "bgr8"))
 
-        # Publicar la información del cubo
         cube_msg = Float32MultiArray()
         cube_msg.data = [cube_info['x'], cube_info['y'], cube_info['area']]
+        self.cube_info_pub.publish(cube_msg)
 
         if cube_info['area'] == 0:
-            if not hasattr(self, 'best_cube_info') or self.best_cube_info is None or cube_info['area'] > self.best_cube_info.get('area', 0):
-                self.best_cube_info = None
-                self.publish_led_color([255, 0, 0])
+            # No se detecta cubo: LED Rojo
+            self.publish_led_color([0, 0, 0])
             return
+
+        # Verifica si la nueva detección es mejor o similar a la mejor actual
+        if self.best_cube_info:
+            if self.is_similar_to_best_cube(cube_info):
+                self.best_cube_info['x'] = (self.best_cube_info['x'] + cube_info['x']) / 2
+                self.best_cube_info['y'] = (self.best_cube_info['y'] + cube_info['y']) / 2
+                self.best_cube_info['area'] = (self.best_cube_info['area'] + cube_info['area']) / 2
+                self.best_cube_info_reset += 1
+                self.publish_led_color([0, 0, 255])
+            elif self.is_new_cube_better(cube_info):
+                self.best_cube_info = cube_info
+                self.best_cube_info_reset = 0
+                # Cambio a una mejor detección: LED Verde
+                self.publish_led_color([0, 255, 0])
+            else:
+                self.best_cube_info = None
         else:
-            self.cube_info_pub.publish(cube_msg)
+            self.best_cube_info = cube_info
+            self.best_cube_info_reset = 0
+            # Cambio a una mejor detección: LED Verde
             self.publish_led_color([0, 255, 0])
 
-        if self.best_cube_info is None or cube_info['area'] > self.best_cube_info.get('area', 0) or self.best_cube_info_reset > 10:
-            self.best_cube_info_reset = 0
-            self.best_cube_info = cube_info
+        # Convierte las coordenadas a cm
+        if self.best_cube_info:
+            x_mm, y_mm = self.pixel_to_mm_camera0(cube_info['x'], cube_info['y']) if camera_id == 0 else \
+                        self.pixel_to_mm_camera1(cube_info['x'], cube_info['y'])
+            z_mm = self.area_to_z_mm_camera0(cube_info['area']) if camera_id == 0 else \
+                self.area_to_z_mm_camera1(cube_info['area'])
 
-            if camera_id == 0:
-                x_mm, y_mm = self.pixel_to_mm_camera0(cube_info['x'], cube_info['y'])
-                z_mm = self.area_to_z_mm_camera0(cube_info['area'])
-            else:
-                x_mm, y_mm = self.pixel_to_mm_camera1(cube_info['x'], cube_info['y'])
-                z_mm = self.area_to_z_mm_camera1(cube_info['area'])
-
+            # Publica la posición en cm
             target_msg = Float32MultiArray()
-            target_msg.data = [x_mm, y_mm, z_mm]
+            target_msg.data = [x_mm, y_mm, z_mm]  # Convertir a cm
             self.target_position_pub.publish(target_msg)
 
-            self.publish_led_color([0, 0, 255])
-        else:
-            self.best_cube_info_reset += 1
+    def is_new_cube_better(self, cube_info, tolerance=500):
+        """Determina si una nueva detección es mejor que la actual basada en el área."""
+        return cube_info['area'] > (self.best_cube_info.get('area', 0) + tolerance)
 
-    def check_image_timeout(self):
-        timeout_duration = rclpy.duration.Duration(seconds=2.0)
-
-        current_time = self.get_clock().now()
-        if (current_time - self.last_image_time_camera0) > timeout_duration and \
-           (current_time - self.last_image_time_camera1) > timeout_duration:
-            self.publish_led_color([255, 255, 255])
+    def is_similar_to_best_cube(self, cube_info, tolerance=100):
+        dx = abs(self.best_cube_info['x'] - cube_info['x'])
+        dy = abs(self.best_cube_info['y'] - cube_info['y'])
+        darea = abs(self.best_cube_info['area'] - cube_info['area'])
+        return dx < (tolerance/10) and dy < (tolerance/10) and darea < tolerance
 
     def process_image(self, frame, camera_id):
         camera_prefix = f'camera{camera_id}'
@@ -178,7 +196,7 @@ class ImageProcessingNode(Node):
         contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         for contour in contours:
             area = cv2.contourArea(contour)
-            if 100 < area < 10000:
+            if 1000 < area < 10000:
                 M = cv2.moments(contour)
                 if M['m00'] > 0:
                     x = int(M['m10'] / M['m00'])
@@ -202,13 +220,13 @@ class ImageProcessingNode(Node):
         return x, y, area
 
     def pixel_to_mm_camera0(self, x, y):
-        x_mm = (6/85)*x - 33.41
+        x_mm = -(6/85)*x - 33.41
         y_mm = -(3/4)*y + 292.5
         return x_mm, y_mm
 
     def pixel_to_mm_camera1(self, x, y):
-        x_mm = -(7/170)*x + 20.176
-        y_mm = (7/110)*y + 10.73
+        x_mm = -(7/170)*x + 26.176
+        y_mm = (7/110)*y + 6.73
         return x_mm, y_mm
 
     def area_to_z_mm_camera0(self, area):
@@ -216,7 +234,7 @@ class ImageProcessingNode(Node):
         return z_mm
 
     def area_to_z_mm_camera1(self, area):
-        z_mm = -(3/400)*area + 29.25
+        z_mm = -(3/400)*area + 25.25
         return z_mm
 
 def main(args=None):

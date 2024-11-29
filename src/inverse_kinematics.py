@@ -33,11 +33,11 @@ class InverseKinematicsNode(Node):
         self.joint_pub = self.create_publisher(JointState, 'joint_states', 10)
 
         self.stability_window = 5
-        self.position_tolerance = 1.5
+        self.position_tolerance = 5
         self.stable_detections = []
         self.last_position = None
         self.movement_interval = 2.0
-        self.max_time_between_detections = 2.0
+        self.max_time_between_detections = 0.5
         self.last_detection_time = self.get_clock().now()
         self.last_movement_time = self.get_clock().now()
 
@@ -70,6 +70,10 @@ class InverseKinematicsNode(Node):
         try:
             joint_names = [joint.name for joint in self.chain.links[1:]]
             joint_angles = self.chain.inverse_kinematics(target_position)[1:]
+
+            if target_position[0] < 0:
+                joint_angles[0] = 180 - joint_angles[0]
+
             joint_state_msg = JointState()
             joint_state_msg.header.stamp = self.get_clock().now().to_msg()
             joint_state_msg.name = joint_names
